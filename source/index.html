@@ -1,205 +1,201 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи. Главная страница</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/34x43"
-           width="34" height="43" alt="Логотип Cat energy">
-        <img class="page-header__logo-text" src="http://placehold.it/100x20"
-             width="100" height="20" alt="Текстовый логотип Cat energy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Специальные диеты для котов</h1>
-      <section class="banner-promo">
-        <h2 class="banner-promo__title">
-          Функциональное питание для котов
-        </h2>
-        <p class="banner-promo__slogan">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="banner-promo__image" src="http://placehold.it/280x230" width="280" height="230" alt="Картинка с питанием">
 
-        <!--Вот тут ниже я не пойму как сделать лучше куда кнопка и стиль повторяются
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи. Главная страница</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="http://placehold.it/34x43" width="34" height="43" alt="Логотип Cat energy">
+      <img class="page-header__logo-text" src="http://placehold.it/100x20" width="100" height="20" alt="Текстовый логотип Cat energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Специальные диеты для котов</h1>
+    <section class="banner-promo">
+      <h2 class="banner-promo__title">
+        Функциональное питание для котов
+      </h2>
+      <p class="banner-promo__slogan">
+        Занялся собой? Займись котом!
+      </p>
+      <img class="banner-promo__image" src="http://placehold.it/280x230" width="280" height="230" alt="Картинка с питанием">
+
+      <!--Вот тут ниже я не пойму как сделать лучше куда кнопка и стиль повторяются
         на разных страницах оставить уневирсальный класс btn?
         или же сдеалать banner-promo__title ? но как же тогда принцип DRY?
         я совсем запутался (((
         и нужно ли в файле scss  в файле для каждого блока дублировать стили для btn-->
-        <a class="btn btn__link" href="form.html">
-          Подобрать программу
-        </a>
-      </section>
-
-      <section class="program">
-        <h2 class="visually-hidden">
-          Программы диет
-        </h2>
-        <ul class="program__list">
-          <li class="program__item">
-            <img class="program__icon" src="http://placehold.it/70x56"
-                 width="70" height="56" alt="Логотип Похудание">
-            <h3 class="program__title">
-              Похудение
-            </h3>
-            <p class="program__description">
-              Ваш кот весит больше собаки и
-              почти утратил способность лазить
-              по деревьям? Пора на диету! Cat
-              Energy Slim поможет вашему
-              питомцу сбросить лишний вес.
-            </p>
-            <a class="progam__link" href="catalog-slim.html">
-              Каталог slim
-            </a>
-          </li>
-
-          <li class="program__item">
-            <img class="program__icon" src="http://placehold.it/70x56"
-                 width="70" height="56" alt="Логотип Похудание">
-            <h3 class="program__title">
-              Набор массы
-            </h3>
-            <p class="program__description">
-              Заработать авторитет среди
-              дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет
-              вашему коту нарастить
-              необходимые мышцы!
-            </p>
-            <a class="program__link" href="catalog-pro.html">
-              Каталог pro
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="advantages">
-        <h2 class="advantages__title">
-          Как это работает
-        </h2>
-        <ul>
-          <li class="advantages__list">
-            <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
-            <p class="advantages__description">
-              Функциональное питание содержит только полезные питательные вещества.
-            </p>
-          </li>
-          <li class="advantages__list">
-            <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
-            <p class="advantages__description">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-          </li>
-          <li class="advantages__list">
-            <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
-            <p class="advantages__description">
-              Замените один-два приема обычной еды на наше функциональное питание.
-            </p>
-          </li>
-          <li class="advantages__list">
-            <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
-            <p class="advantages__description">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="example">
-        <h2 class="example__title">
-          Живой пример
-        </h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто
-          заменив свой обычный корм на Cat
-          Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не
-          менял своих привычек и по-прежнему
-          спит по 16 часов в день.
-        </p>
-
-        <table class="example__stats stats">
-          <tr class="stats__cell">
-            <td class="stats__value">5кг</td>
-            <td class="stats__field">снижение веса</td>
-          </tr>
-          <tr class="stats__cell">
-            <td class="stats__value">60 дней</td>
-            <td class="stats__field">затрачено времени</td>
-          </tr>
-        </table>
-        <p class="example__total">
-          Затраты на питание: 15 000 руб.
-        </p>
-        <img class="example__image" src="http://placehold.it/280x230"
-             width="280" height="230" alt="Кот до похудания">
-        <button class="example__btn" type="button"
-                aria-label="Фотография кота до похудания">
-          Было
-        </button>
-        <button class="example__btn" type="button"
-                aria-label="Фотография кота после похудания">
-          Стало
-        </button>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="contacts">
-        <p class="contacts__cooperation">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__address">
-          ул. Большая Коннюшенная, д. 19/8
-          Санкт-Петербург
-        </p>
-      </div>
-      <a class="map" href="" aria-label="Карта">
-        <img class="map__image" src="http://placehold.it/366x320" alt="Карта">
+      <a class="btn btn__link" href="form.html">
+        Подобрать программу
       </a>
-      <a class="footer-logo" aria-label="">
-        <img class="footer-logo__img" src="http://placehold.it/130x25" alt="Логотип">
+    </section>
+
+    <section class="program">
+      <h2 class="visually-hidden">
+        Программы диет
+      </h2>
+      <ul class="program__list">
+        <li class="program__item">
+          <img class="program__icon" src="http://placehold.it/70x56" width="70" height="56" alt="Логотип Похудание">
+          <h3 class="program__title">
+            Похудение
+          </h3>
+          <p class="program__description">
+            Ваш кот весит больше собаки и
+            почти утратил способность лазить
+            по деревьям? Пора на диету! Cat
+            Energy Slim поможет вашему
+            питомцу сбросить лишний вес.
+          </p>
+          <a class="progam__link" href="catalog-slim.html">
+            Каталог slim
+          </a>
+        </li>
+
+        <li class="program__item">
+          <img class="program__icon" src="http://placehold.it/70x56" width="70" height="56" alt="Логотип Похудание">
+          <h3 class="program__title">
+            Набор массы
+          </h3>
+          <p class="program__description">
+            Заработать авторитет среди
+            дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет
+            вашему коту нарастить
+            необходимые мышцы!
+          </p>
+          <a class="program__link" href="catalog-pro.html">
+            Каталог pro
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="advantages">
+      <h2 class="advantages__title">
+        Как это работает
+      </h2>
+      <ul>
+        <li class="advantages__list">
+          <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <p class="advantages__description">
+            Функциональное питание содержит только полезные питательные вещества.
+          </p>
+        </li>
+        <li class="advantages__list">
+          <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <p class="advantages__description">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </p>
+        </li>
+        <li class="advantages__list">
+          <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <p class="advantages__description">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </p>
+        </li>
+        <li class="advantages__list">
+          <img class="advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <p class="advantages__description">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="example">
+      <h2 class="example__title">
+        Живой пример
+      </h2>
+      <p class="example__description">
+        Борис сбросил 5 кг за 2 месяца, просто
+        заменив свой обычный корм на Cat
+        Energy Slim. Отличный результат без
+        изнуряющих тренировок! При этом он не
+        менял своих привычек и по-прежнему
+        спит по 16 часов в день.
+      </p>
+
+      <table class="example__stats stats">
+        <tr class="stats__cell">
+          <td class="stats__value">5кг</td>
+          <td class="stats__field">снижение веса</td>
+        </tr>
+        <tr class="stats__cell">
+          <td class="stats__value">60 дней</td>
+          <td class="stats__field">затрачено времени</td>
+        </tr>
+      </table>
+      <p class="example__total">
+        Затраты на питание: 15 000 руб.
+      </p>
+      <img class="example__image" src="http://placehold.it/280x230" width="280" height="230" alt="Кот до похудания">
+      <button class="example__btn" type="button" aria-label="Фотография кота до похудания">
+        Было
+      </button>
+      <button class="example__btn" type="button" aria-label="Фотография кота после похудания">
+        Стало
+      </button>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="contacts">
+      <p class="contacts__cooperation">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <p class="contacts__address">
+        ул. Большая Коннюшенная, д. 19/8
+        Санкт-Петербург
+      </p>
+    </div>
+    <a class="map" href="" aria-label="Карта">
+      <img class="map__image" src="http://placehold.it/366x320" alt="Карта">
+    </a>
+    <a class="footer-logo" aria-label="">
+      <img class="footer-logo__img" src="http://placehold.it/130x25" alt="Логотип">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="vk.com"><img src="http://placehold.it/23x23" alt="">
+            Мы в Вконтакте
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="instagramm.com">
+            <img src="http://placehold.it/23x23" alt="">
+            Мы в Инстаграмм
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="fb.com">
+            <img src="http://placehold.it/23x23" alt="">
+            Мы в Фейсбук
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright_image" src="http://placehold.it/27x34" alt="Логотип Html Academy">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="vk.com"><img src="http://placehold.it/23x23" alt="">
-              Мы в Вконтакте
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="instagramm.com">
-              <img src="http://placehold.it/23x23" alt="">
-              Мы в Инстаграмм
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="fb.com">
-              <img src="http://placehold.it/23x23" alt="">
-              Мы в Фейсбук
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright_image" src="http://placehold.it/27x34" alt="Логотип Html Academy">
-        </a>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
