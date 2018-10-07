@@ -1,1 +1,8 @@
-body { background: red; }
+@import "../sass/blocks/fonts.scss";
+@import "../sass/blocks/varibals.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/site-list.scss";
+@import "../sass/blocks/page-main.scss";
+@import "../sass/blocks/page-title.scss";
+@import "../sass/blocks/banner-promo.scss"
