@@ -1,5 +1,5 @@
 @import "./normolize.scss";
-@import "../sass/blocks/fonts";
+@import "blocks/fonts";
 @import "./varibals";
 @import "./mixins.scss";
 @import "./main-style";
@@ -9,6 +9,7 @@
 @import "blocks/banner-promo";
 @import "blocks/btn";
 @import "blocks/program-list";
+@import "blocks/advantages";
 // @import "../sass/blocks/page-main.scss";
 // @import "../sass/blocks/page-title.scss";
 // @import "../sass/blocks/banner-promo.scss"

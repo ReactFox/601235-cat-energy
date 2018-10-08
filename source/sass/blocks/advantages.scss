@@ -1,0 +1,12 @@
+.advantages__title {
+  @include reset-indentation;
+  @include oswald-regular;
+  color: $title-color;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advantages__list {
+  @include reset-indentation;
+  //color: $text-color;
+}

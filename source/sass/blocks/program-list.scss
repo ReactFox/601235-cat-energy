@@ -1,13 +1,29 @@
 .program__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-indentation;
 }
 
 .program__item {
-  margin: 0;
-  padding: 0;
+  @include reset-indentation;
   margin-bottom: 20px;
   background-color: $background-grey-color;
   display: block;
+}
+
+.program__title {
+  @include reset-indentation;
+  @include oswald-regular;
+  color: $title-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+}
+
+.program__link {
+  @include reset-indentation;
+  @include oswald-regular;
+  color: $title-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }

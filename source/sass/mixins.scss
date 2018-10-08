@@ -1,7 +1,7 @@
 @mixin font-regular {
   font-weight: 400;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 18px;
   font-family: "Arial", "Open Sans", sans-serif;
   color: $text-color;
   letter-spacing: normal;
@@ -19,4 +19,9 @@
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
+}
+
+@mixin reset-indentation {
+  margin: 0;
+  padding: 0;
 }

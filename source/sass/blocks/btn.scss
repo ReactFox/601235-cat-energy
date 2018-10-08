@@ -1,8 +1,7 @@
 .btn {
   @include oswald-regular;
+  @include reset-indentation;
   color: $white-color;
-  margin: 0;
-  padding: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 14px;
