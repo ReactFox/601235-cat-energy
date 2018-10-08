@@ -1,0 +1,27 @@
+.banner-promo {
+  color: $white-color;
+}
+
+.banner-promo__title-container {
+  background-color: $green-color;
+}
+
+.banner-promo__title {
+  @include oswald-regular;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.banner-promo__slogan {
+  @include oswald-regular;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

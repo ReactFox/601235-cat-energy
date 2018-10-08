@@ -1,0 +1,13 @@
+.program__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.program__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: $background-grey-color;
+  display: block;
+}

@@ -14,32 +14,48 @@
       <img class="page-header__logo-text" src="http://placehold.it/100x20" width="100" height="20" alt="Текстовый логотип Cat energy">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button" ar><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Подбор программы
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="page-main">
+
     <h1 class="visually-hidden">Специальные диеты для котов</h1>
     <section class="banner-promo">
-      <h2 class="banner-promo__title">
-        Функциональное питание для котов
-      </h2>
-      <p class="banner-promo__slogan">
-        Занялся собой? Займись котом!
-      </p>
-      <img class="banner-promo__image" src="http://placehold.it/280x230" width="280" height="230" alt="Картинка с питанием">
-
+      <div class="banner-promo__title-container">
+        <h2 class="banner-promo__title">
+          Функциональное питание для котов
+        </h2>
+        <p class="banner-promo__slogan">
+          Занялся собой? Займись котом!
+        </p>
+      </div>
+      <div class="banner-promo__image-container">
+        <img class="banner-promo__image" src="http://placehold.it/280x230" width="280" height="230" alt="Картинка с питанием">
+      </div>
       <a class="banner-promo__link btn" href="form.html">
         Подобрать программу
       </a>
     </section>
+  </header>
 
+  <main class="page-main">
     <section class="program">
       <h2 class="visually-hidden">
         Программы диет
