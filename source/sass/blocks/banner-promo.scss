@@ -7,17 +7,11 @@
 }
 
 .banner-promo__title {
-  @include oswald-regular;
-  @include reset-indentation;
   padding-top: 20px;
   padding-bottom: 12px;
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
 }
 
 .banner-promo__slogan {
-  @include oswald-regular;
   @include reset-indentation;
   font-size: 14px;
   line-height: 14px;

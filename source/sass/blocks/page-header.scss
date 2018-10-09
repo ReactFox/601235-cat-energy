@@ -1,5 +1,4 @@
 .page-header {
-  margin: 0;
-  padding: 0;
+  @include reset-indentation;
   margin-bottom: 20px;
 }

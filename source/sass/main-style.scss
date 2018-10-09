@@ -2,7 +2,7 @@ body {
   // min-width: 1200px;
   margin: 0;
   padding: 0;
-  @include font-regular;
+  @include oswald-regular;
 
   background-color: $white-color;
 }

@@ -1,0 +1,11 @@
+.header-title {
+  @include reset-indentation;
+  color: $title-color;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.header-title--white {
+  color: $white-color;
+}
+

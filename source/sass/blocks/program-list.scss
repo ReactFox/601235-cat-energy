@@ -1,6 +1,6 @@
 .program__list {
-  list-style: none;
   @include reset-indentation;
+  list-style: none;
 }
 
 .program__item {
@@ -12,16 +12,23 @@
 
 .program__title {
   @include reset-indentation;
-  @include oswald-regular;
   color: $title-color;
   font-size: 24px;
   font-weight: 400;
   line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.program__description {
+  @include reset-indentation;
+  @include font-regular;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .program__link {
   @include reset-indentation;
-  @include oswald-regular;
   color: $title-color;
   font-size: 16px;
   line-height: 16px;
