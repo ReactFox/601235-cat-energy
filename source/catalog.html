@@ -14,16 +14,31 @@
       <img class="page-header__logo-text" src="http://placehold.it/100x20" width="100" height="20" alt="Текстовый логотип Cat energy">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Подбор программы
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-  </header>
   <main class="page-main">
     <!--Катлог товаров-->
     <h1 class="page-title">
@@ -315,38 +330,41 @@
         Санкт-Петербург
       </p>
     </div>
-    <a class="map" href="" aria-label="Карта">
+    <a class="page-footer__map map" href="" aria-label="Карта">
       <img class="map__image" src="http://placehold.it/366x320" alt="Карта">
     </a>
-    <a class="footer-logo" href="index.html" aria-label="Переход на главную страницу">
-      <img class="footer-logo__img" src="http://placehold.it/130x25" alt="Логотип">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="vk.com"><img src="http://placehold.it/23x23" alt="Логотип в Вконтакте">
-            Мы в Вконтакте
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="instagramm.com">
-            <img src="http://placehold.it/23x23" alt="Логотип Инстаграмм">
-            Мы в Инстаграмм
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="fb.com">
-            <img src="http://placehold.it/23x23" alt="Логотип Фейсбук">
-            Мы в Фейсбук
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка логотип на сайт Академии">
-        <img class="copyright_image" src="http://placehold.it/27x34" alt="Логотип Html Academy">
+
+    <div class="footer-bottom">
+      <a class="page-footer__logo footer-logo" aria-label="">
+        <img class="footer-logo__img" src="http://placehold.it/130x25" alt="Логотип">
       </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="vk.com"><img src="http://placehold.it/23x23" alt="">
+              Мы в Вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="instagramm.com">
+              <img src="http://placehold.it/23x23" alt="">
+              Мы в Инстаграмм
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="fb.com">
+              <img src="http://placehold.it/23x23" alt="">
+              Мы в Фейсбук
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="http://placehold.it/27x34" alt="Логотип Html Academy">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

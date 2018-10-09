@@ -1,0 +1,38 @@
+.example {
+  background-color: $background-grey-color;
+}
+
+.example__description {
+  @include font-regular;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.stats__value {
+  color: $title-color;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.stats__field {
+  @include font-regular;
+  color: $text-color;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__total {
+  color: $title-color;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__btn {
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
