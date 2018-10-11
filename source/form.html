@@ -27,18 +27,19 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">
+            <a class="site-list__link">
               Подбор программы
             </a>
           </li>
         </ul>
       </div>
     </nav>
+  </header>
 
   <main class="page-main">
     <h1 class="page-title">
@@ -60,40 +61,38 @@
         <input class="field-data__input form-input" id="age" type="number" placeholder="?">
       </fieldset>
 
-      <fieldset class="form-order__main field-data">
-        <input class="field-data__radio form-radio" id="weight" type="radio" name="radio" value="losing-weight" checked>
-        <label class="field-data__label form-label" for="weight">Похудение</label>
+      <fieldset class="form-order__radio radio-data">
+        <input class="radio-data__radio form-radio" id="weight" type="radio" name="radio" value="losing-weight" checked>
+        <label class="radio-data__label form-label" for="weight">Похудение</label>
 
-        <input class="field-data__radio form-radio" id="gain" type="radio" name="radio" value="weight-gain">
-        <label class="field-data__label form-label" for="gain">Набор массы</label>
+        <input class="radio-data__radio form-radio" id="gain" type="radio" name="radio" value="weight-gain">
+        <label class="radio-data__label form-label" for="gain">Набор массы</label>
 
-        <input class="field-data__radio form-radio" id="consultation" type="radio" name="radio" value="consultation">
-        <label class="field-data__label form-label" for="consultation">Не знаю (нужен ваш совет)</label>
+        <input class="radio-data__radio form-radio" id="consultation" type="radio" name="radio" value="consultation">
+        <label class="radio-data__label form-label" for="consultation">Не знаю (нужен ваш совет)</label>
       </fieldset>
 
-      <fieldset class="form-order__main additional-form">
-        <legend class="additional-form__legend">
+      <fieldset class="form-order__contacts-data contacts-imput">
+        <legend class="contacts-imput__legend form-legend">
           Контактные данные
           (владельца кота)
         </legend>
-        <label class="additional-form__label form-label" for="email">E-mail:<sup class="data-sup">*</sup></label>
-        <input class="additional-form__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+        <label class="contacts-imput__label form-label" for="email">E-mail:<sup class="data-sup">*</sup></label>
+        <input class="contacts-imput__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
 
-        <label class="additional-form__label form-label" for="tel">Телефон:<sup class="data-sup">*</sup></label>
-        <input class="additional-form__input form-input" id="tel" type="tel" placeholder="8 (960) 900-60-90" required>
+        <label class="contacts-imput__label form-label" for="tel">Телефон:<sup class="data-sup">*</sup></label>
+        <input class="contacts-imput__input form-input" id="tel" type="tel" placeholder="8 (960) 900-60-90" required>
       </fieldset>
 
-      <fieldset class="form-order__main additional-form">
-        <legend class="additional-form__legend">
+      <fieldset class="form-order__aria form-aria">
+        <legend class="form-aria__legend form-legend">
           Комментарий
         </legend>
-        <textarea class="additional-form__aria" name="about-form" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
-
-        </textarea>
+        <textarea class="form-aria__text" name="about-form" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form-order__main additional-form">
-        <legend class="additional-form__legend">
+      <fieldset class="form-order__additional additional-form">
+        <legend class="additional-form__legend form-legend">
           Дополнительно
         </legend>
         <input class="additional-form__checkbox form-checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
@@ -109,15 +108,15 @@
         <label class="additional-form__label form-label" for="vitamin">Витамины</label>
       </fieldset>
 
-      <a class="additional-form__link btn" href="order.html">
+      <a class="form-additional__link btn" href="order.html">
         Отправить заявку
       </a>
 
-      <span class="form-order__rule">
-        <sup class="data-sup">
+      <span class="form-order__rule reception-rule">
+        <sup class="reception-rule__sup">
           *
         </sup>
-        обязательные поля
+       &mdash; обязательные поля
       </span>
 
     </form>
