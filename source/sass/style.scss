@@ -3,9 +3,9 @@
 @import "./varibals";
 @import "./mixins.scss";
 @import "./main-style";
-@import "blocks/header-title";
 @import "blocks/page-header";
 @import "blocks/main-nav";
+@import "blocks/page-title";
 @import "blocks/site-list";
 @import "blocks/banner-promo";
 @import "blocks/btn";
@@ -23,3 +23,4 @@
 @import "blocks/additional-goods";
 @import "blocks/cards-additional";
 @import "blocks/promo-link";
+@import "blocks/form-order";

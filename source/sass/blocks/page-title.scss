@@ -1,11 +1,12 @@
-.header-title {
+.page-title {
   @include reset-indentation;
+  @include oswald-regular;
   color: $title-color;
   font-size: 36px;
+  font-weight: 400;
   line-height: 60px;
 }
 
-.header-title--white {
+.page-title--white {
   color: $white-color;
 }
-
