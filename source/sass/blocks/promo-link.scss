@@ -1,0 +1,12 @@
+.promo-link {
+  display: block;
+}
+
+.promo-link__text {
+  @include font-regular;
+  color: $white-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: $green-color;
+}
