@@ -1,9 +1,7 @@
 body {
-  // min-width: 1200px;
+  @include oswald-regular;
   margin: 0;
   padding: 0;
-  @include oswald-regular;
-
   background-color: $white-color;
 }
 
@@ -17,15 +15,13 @@ a {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .visually-hidden {
