@@ -1,0 +1,23 @@
+.other-goods__title {
+  @include reset-indentation;
+  @include font-regular;
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.other-goods__description {
+  @include reset-indentation;
+  @include font-regular;
+  color: $text-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.btn--color {
+  background-color: $footer-color;
+  color: $text-color;
+}

@@ -1,0 +1,36 @@
+.program__list {
+  @include reset-indentation;
+  list-style: none;
+}
+
+.program__item {
+  @include reset-indentation;
+  margin-bottom: 20px;
+  background-color: $background-grey-color;
+  display: block;
+}
+
+.program__title {
+  @include reset-indentation;
+  color: $title-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.program__description {
+  @include reset-indentation;
+  @include font-regular;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program__link {
+  @include reset-indentation;
+  color: $title-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

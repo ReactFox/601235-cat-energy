@@ -1,0 +1,16 @@
+.banner-promo__title-container {
+  background-color: $green-color;
+}
+
+.banner-promo__title {
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.banner-promo__slogan {
+  @include reset-indentation;
+  color: $white-color;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

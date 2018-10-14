@@ -1,0 +1,14 @@
+.site-list {
+  @include reset-indentation;
+  @include oswald-medium;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  padding-top: 12px;
+  color: $title-color;
+}

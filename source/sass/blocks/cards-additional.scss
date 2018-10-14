@@ -1,0 +1,27 @@
+.cards-additional__title {
+  @include reset-indentation;
+  color: $title-color-additional-goods;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.cards-additional__description {
+  @include reset-indentation;
+  @include font-regular;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.cards-additional__price {
+  @include reset-indentation;
+  @include font-regular;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

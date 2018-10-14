@@ -3,339 +3,362 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи. Каталог продукции.</title>
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/34x43" width="34" height="43" alt="Логотип Cat energy">
-      <img class="page-header__logo-text" src="http://placehold.it/100x20" width="100" height="20" alt="Текстовый логотип Cat energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="page-main">
-    <!--Катлог товаров-->
-    <h1 class="page-title">
-      Каталог продукции
-    </h1>
-    <section class="basic-goods">
-      <ul class="basic-goods__list">
-        <!--товар 1-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/70x82" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">500 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">Курица</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">700 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img class="page-header__logo-image" src="http://placehold.it/34x43" width="34" height="43" alt="Логотип Cat energy">
+    <img class="page-header__logo-text" src="http://placehold.it/100x20" width="100" height="20" alt="Текстовый логотип Cat energy">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="index.html">
+            Главная
           </a>
         </li>
-
-        <!--товар 2-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/80x96" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">1000 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">Курица</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">1000 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
+        <li class="site-list__item">
+          <a class="site-list__link">
+            Каталог продукции
           </a>
         </li>
-
-        <!--товар 3-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/70x82" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">500 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">Рыба</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">700 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
-          </a>
-        </li>
-
-        <!--товар 4-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/80x96" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">1000 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">Рыба</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">1000 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
-          </a>
-        </li>
-
-        <!--товра 5-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/70x82" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">500 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">Гречка</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">700 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
-          </a>
-        </li>
-
-        <!--товар 6-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/80x96" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">1000 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">Гречка</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">1000 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
-          </a>
-        </li>
-
-        <!--товар 7-->
-        <li class="basic-goods__item cards">
-          <a class="cards__link" href="#">
-            <img class src="http://placehold.it/70x82" alt="Фото товара">
-            <h3 class="cards__title">
-              Cat energy
-            </h3>
-            <p class="cards__weight">
-              pro 500 г
-            </p>
-            <table class="cards__table description-table">
-              <tr class="description-table__row">
-                <td class="description-table__field">Объём</td>
-                <td class="description-table__value">500 г</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Вкус</td>
-                <td class="description-table__value">рис</td>
-              </tr>
-              <tr class="description-table__row">
-                <td class="description-table__field">Цена</td>
-                <td class="description-table__value">700 р.</td>
-              </tr>
-            </table>
-          </a>
-          <a class="btn cards__link" href="order.html">
-            Заказать
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">
+            Подбор программы
           </a>
         </li>
       </ul>
-      <div class="other-goods other-goods--icon">
+    </div>
+  </nav>
+</header>
+<main class="page-main">
+  <!--Катлог товаров-->
+  <h1 class="page-title">
+    Каталог продукции
+  </h1>
+  <section class="basic-goods">
+    <ul class="basic-goods__list">
+      <!--товар 1-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/70x82" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">500 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">Курица</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">700 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--товар 2-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/80x96" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">1000 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">Курица</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">1000 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--товар 3-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/70x82" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">500 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">Рыба</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">700 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--товар 4-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/80x96" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">1000 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">Рыба</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">1000 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--товра 5-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/70x82" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">500 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">Гречка</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">700 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--товар 6-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/80x96" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">1000 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">Гречка</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">1000 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--товар 7-->
+      <li class="basic-goods__item cards">
+        <a class="cards__link" href="#">
+          <img class src="http://placehold.it/70x82" alt="Фото товара">
+          <h3 class="cards__title">
+            Cat energy
+          </h3>
+          <p class="cards__weight">
+            pro 500 г
+          </p>
+          <table class="cards__table description-table">
+            <tr class="description-table__row">
+              <td class="description-table__field">Объём</td>
+              <td class="description-table__value">500 г</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Вкус</td>
+              <td class="description-table__value">рис</td>
+            </tr>
+            <tr class="description-table__row">
+              <td class="description-table__field">Цена</td>
+              <td class="description-table__value">700 р.</td>
+            </tr>
+          </table>
+        </a>
+        <a class="btn cards__link" href="order.html">
+          Заказать
+        </a>
+      </li>
+
+      <!--возможно не лучшее решение, но как сделать лучше
+      я не придумал :( учитывая что этот блок должен
+      распологаться рядом с карточками товаров-->
+      <li class="basic-goods__item cards other-goods">
         <h3 class="other-goods__title">
           Показать ещё 100500 товаров
         </h3>
         <p class="other-goods__description">
           На самом деле вкусов гораздо больше
         </p>
-        <a class="other-goods__link button" href="other-goods.hmtl">
+        <a class="other-goods__link btn btn--color" href="other-goods.hmtl">
           Показать всё
         </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="additional-goods">
+    <h2 class="additional-goods__title">
+      Дополнительные товары
+    </h2>
+    <ul class="additional-goods__list">
+      <li class="additional-goods__item cards-additional">
+        <h3 class="cards-additional__title">Сахарозаменитель</h3>
+        <p class="cards-additional__description">1 упаковка (100 г)</p>
+        <span class="cards-additional__price">100 р.</span>
+        <a class="btn additional-goods__link" href="order.html">
+          Закзать
+        </a>
+      </li>
+      <li class="additional-goods__item cards-additional">
+        <h3 class="cards-additional__title">Питьевая вода</h3>
+        <p class="cards-additional__description">5 литров</p>
+        <span class="cards-additional__price">50 р.</span>
+        <a class="btn additional-goods__link" href="order.html">
+          Закзать
+        </a>
+      </li>
+      <li class="additional-goods__item cards-additional">
+        <h3 class="cards-additional__title">Молоко</h3>
+        <p class="cards-additional__description">1 литр</p>
+        <span class="cards-additional__price">100 р.</span>
+        <a class="btn additional-goods__link" href="order.html">
+          Закзать
+        </a>
+      </li>
+      <li class="additional-goods__item cards-additional">
+        <h3 class="cards-additional__title">Витамины</h3>
+        <p class="cards-additional__description">1 упаковка (30 г)</p>
+        <span class="cards-additional__price">300 р.</span>
+        <a class="btn additional-goods__link" href="order.html">
+          Закзать
+        </a>
+      </li>
+    </ul>
+
+    <a class="promo-link promo-link--icon" href="order-all.html">
+      <div class="promo-link__wrapper">
+        <p class="promo-link__text">
+          Закажите все
+          и получите чехол для
+          кота в подарок!
+        </p>
       </div>
-    </section>
-
-    <section class="additional-goods">
-      <h2 class="additional-goods__title">
-        Дополнительные товары
-      </h2>
-      <ul class="additional-goods__list">
-        <li class="additional-goods__item cards-additional">
-          <h3 class="cards-additional__title">Сахарозаменитель</h3>
-          <p class="cards-additional__description">1 упаковка (100 г)</p>
-          <span class="cards-additional__price">100 р.</span>
-          <a class="btn additional-goods__link" href="order.html">
-            Закзать
-          </a>
-        </li>
-        <li class="additional-goods__item cards-additional">
-          <h3 class="cards-additional__title">Питьевая вода</h3>
-          <p class="cards-additional__description">5 литров</p>
-          <span class="cards-additional__price">50 р.</span>
-          <a class="btn additional-goods__link" href="order.html">
-            Закзать
-          </a>
-        </li>
-        <li class="additional-goods__item cards-additional">
-          <h3 class="cards-additional__title">Молоко</h3>
-          <p class="cards-additional__description">1 литр</p>
-          <span class="cards-additional__price">100 р.</span>
-          <a class="btn additional-goods__link" href="order.html">
-            Закзать
-          </a>
-        </li>
-        <li class="additional-goods__item cards-additional">
-          <h3 class="cards-additional__title">Витамины</h3>
-          <p class="cards-additional__description">1 упаковка (30 г)</p>
-          <span class="cards-additional__price"></span>
-          <a class="btn additional-goods__link" href="order.html">
-            Закзать
-          </a>
-        </li>
-      </ul>
-
-      <a class="promo-link promo-link--icon" href="order-all.html">
-        <div class="promo-link__wrapper">
-          <p class="promo-link__text">
-            Закажите все
-            и получите чехол для
-            кота в подарок!
-          </p>
-        </div>
-      </a>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="contacts">
-      <p class="contacts__cooperation">
-        Приглашаем к сотрудничеству дилеров!
-      </p>
-      <p class="contacts__address">
-        ул. Большая Коннюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
-    </div>
-    <a class="map" href="" aria-label="Карта">
-      <img class="map__image" src="http://placehold.it/366x320" alt="Карта">
     </a>
-    <a class="footer-logo" href="index.html" aria-label="Переход на главную страницу">
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="contacts">
+    <p class="contacts__cooperation">
+      Приглашаем к сотрудничеству дилеров!
+    </p>
+    <p class="contacts__address">
+      ул. Большая Коннюшенная, д. 19/8
+      Санкт-Петербург
+    </p>
+  </div>
+  <a class="page-footer__map map" href="" aria-label="Карта">
+    <img class="map__image" src="http://placehold.it/366x320" alt="Карта">
+  </a>
+
+  <div class="footer-bottom">
+    <a class="page-footer__logo footer-logo" aria-label="">
       <img class="footer-logo__img" src="http://placehold.it/130x25" alt="Логотип">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="vk.com"><img src="http://placehold.it/23x23" alt="Логотип в Вконтакте">
+          <a href="vk.com"><img src="http://placehold.it/23x23" alt="">
             Мы в Вконтакте
           </a>
         </li>
         <li class="social__item">
           <a href="instagramm.com">
-            <img src="http://placehold.it/23x23" alt="Логотип Инстаграмм">
+            <img src="http://placehold.it/23x23" alt="">
             Мы в Инстаграмм
           </a>
         </li>
         <li class="social__item">
           <a href="fb.com">
-            <img src="http://placehold.it/23x23" alt="Логотип Фейсбук">
+            <img src="http://placehold.it/23x23" alt="">
             Мы в Фейсбук
           </a>
         </li>
@@ -343,11 +366,12 @@
     </div>
     <div class="copyright">
       <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="ссылка логотип на сайт Академии">
-        <img class="copyright_image" src="http://placehold.it/27x34" alt="Логотип Html Academy">
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__image" src="http://placehold.it/27x34" alt="Логотип Html Academy">
       </a>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 
 </html>
