@@ -18,9 +18,11 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: $tablet-width;
+    padding-top: 24px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: none;
   }
 
   .page-header__wrapper {
@@ -44,6 +46,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width;
+    padding-top: 54px;
   }
 
   .page-header__wrapper {

@@ -1,6 +1,9 @@
 .banner-promo {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .banner-promo__title-container {
@@ -8,16 +11,27 @@
 }
 
 .banner-promo__title {
-  padding-top: 20px;
-  padding-bottom: 12px;
+  text-align: center;
+  padding-top: 29px;
+  padding-right: 36px;
+  padding-bottom: 19px;
+  padding-left: 35px;
 }
 
 .banner-promo__slogan {
   @include reset-indentation;
+  padding-bottom: 167px;
+  padding-right: 62px;
+  padding-left: 60px;
   color: $white-color;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.banner-promo__image-container {
+  display: flex;
+  justify-content: center;
 }
 
 .banner-promo__link {
@@ -25,22 +39,59 @@
   margin-left: 20px;
 }
 
-//@media (min-width: $tablet-width) {
-//  .banner-promo__title-container {
-//    background-color: $white-color;
-//    margin-left: 90px;
-//  }
-//
-//  .banner-promo__title {
-//    color: $title-color;
-//    font-size: 60px;
-//    line-height: 60px;
-//    background-color: $white-color;
-//  }
-//
-//  .banner-promo__slogan {
-//    color: $title-color;
-//    font-size: 20px;
-//    line-height: 20px;
-//  }
-//}
+@media (min-width: $tablet-width) {
+  .banner-promo {
+    width: $tablet-width;
+  }
+
+  .banner-promo__title-container {
+    background-color: $white-color;
+  }
+
+  .banner-promo__title {
+    color: $title-color;
+    background-color: $white-color;
+    width: 535px;
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 32px;
+    padding-left: 120px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .banner-promo__slogan {
+    color: $title-color;
+    padding-bottom: 48px;
+    padding-left: 120px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .banner-promo__image-container {
+    order: 1;
+  }
+
+  .banner-promo__link {
+    display: inline-block;
+    margin: 0;
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner-promo {
+    width: $desktop-width;
+  }
+
+  .banner-promo__title {
+    width: 603px;
+    padding-top: 138px;
+    padding-left: 123px;
+  }
+
+  .banner-promo__slogan {
+    padding-bottom: 53px;
+  }
+}
