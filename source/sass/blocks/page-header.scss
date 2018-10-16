@@ -1,4 +1,58 @@
 .page-header {
   @include reset-indentation;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-bottom: 1px solid $border-color;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__wrapper {
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .page-header__logo {
+    justify-content: flex-start;
+    width: 190px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
+  .page-header__wrapper {
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .page-header__logo {
+    width: 610px;
+  }
 }

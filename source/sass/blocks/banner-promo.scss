@@ -1,3 +1,8 @@
+.banner-promo {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner-promo__title-container {
   background-color: $green-color;
 }
@@ -14,3 +19,28 @@
   line-height: 14px;
   text-transform: uppercase;
 }
+
+.banner-promo__link {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+//@media (min-width: $tablet-width) {
+//  .banner-promo__title-container {
+//    background-color: $white-color;
+//    margin-left: 90px;
+//  }
+//
+//  .banner-promo__title {
+//    color: $title-color;
+//    font-size: 60px;
+//    line-height: 60px;
+//    background-color: $white-color;
+//  }
+//
+//  .banner-promo__slogan {
+//    color: $title-color;
+//    font-size: 20px;
+//    line-height: 20px;
+//  }
+//}
