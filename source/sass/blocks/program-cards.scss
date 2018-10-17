@@ -1,0 +1,32 @@
+.program-cards {
+  background-color: $background-grey-color;
+}
+
+.program-cards__title {
+  @include reset-indentation;
+  color: $title-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.program-cards__description {
+  @include reset-indentation;
+  @include font-regular;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program-cards__link {
+  @include reset-indentation;
+  color: $title-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+
+}
