@@ -1,3 +1,22 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cards__image-wrapper {
+  width: 140px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__description-wrapper {
+  width: 140px;
+  flex-shrink: 0;
+}
+
 .cards__title,
 .cards__weight {
   color: $title-color;
@@ -7,11 +26,17 @@
   text-transform: uppercase;
 }
 
-.cards__table {
-  @include reset-indentation;
-  @include font-regular;
-  color: $text-color;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
+.cards__title {
+  margin-top: 22px;
+  margin-bottom: 4px;
 }
+
+.cards__weight {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.cards__table {
+  margin-bottom: 23px;
+}
+

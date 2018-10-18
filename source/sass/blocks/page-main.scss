@@ -1,17 +1,10 @@
-.basic-goods {
-  margin: 0 auto;
-  width: 320px;
+.page-main__title {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.basic-goods__list {
-  @include reset-indentation;
-  list-style: none;
-}
-
 @media (min-width: $tablet-width) {
-  .basic-goods {
+  .page-main__title {
     width: $tablet-width;
     padding-right: 30px;
     padding-left: 30px;
@@ -19,8 +12,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .basic-goods {
-    width: $desktop-width;
+  .page-main__title {
     padding-right: 40px;
     padding-left: 40px;
   }
