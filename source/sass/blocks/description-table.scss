@@ -12,3 +12,10 @@
   width: 140px;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .description-table__row {
+    width: 240px;
+    font-size: 16px;
+  }
+}
