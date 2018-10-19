@@ -1,6 +1,16 @@
+.cards-additional {
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .cards-additional__title {
   @include reset-indentation;
   color: $title-color-additional-goods;
+  width: 280px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -10,18 +20,28 @@
 .cards-additional__description {
   @include reset-indentation;
   @include font-regular;
+  width: 140px;
   color: $text-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  padding-bottom: 14px;
 }
 
 .cards-additional__price {
   @include reset-indentation;
   @include font-regular;
+  width: 140px;
+  display: flex;
+  justify-content: flex-end;
   color: $text-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.additional-goods__link {
+  width: 100%;
+  text-align: center;
 }
