@@ -296,7 +296,12 @@
         Дополнительные товары
       </h2>
     </div>
-    <div class="additional-goods__wrapper">
+
+    <!--ниже создал модификатор контейнере из за разметки
+     и зелёной линии h2 если задал бы флекс additional-goods
+     wraper то сломалось бы вёрстака, h2 ужался бы под содержанию
+     и уехал в центр страницы-->
+    <div class="additional-goods__wrapper additional-goods__wrapper--flex">
       <ul class="additional-goods__list">
         <li class="additional-goods__item cards-additional">
           <h3 class="cards-additional__title">Сахарозаменитель</h3>

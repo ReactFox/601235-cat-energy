@@ -82,6 +82,7 @@
     width: 895px;
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
   }
 
   .additional-goods__wrapper {
@@ -90,6 +91,9 @@
     padding-right: 40px;
     padding-left: 40px;
     //display: flex;
+    &--flex {
+      display: flex;
+    }
   }
 
   .additional-goods__title {
