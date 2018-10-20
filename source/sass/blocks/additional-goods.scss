@@ -10,7 +10,6 @@
   font-weight: 400;
   line-height: 24px;
   position: relative;
-  //margin: 0 auto;
 
   &::after {
     content: "";
@@ -71,14 +70,26 @@
       display: none;
     }
   }
+
+  .additional-goods__link {
+    margin-bottom: 27px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods__list {
+    width: 895px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .additional-goods__wrapper {
     width: $desktop-width;
     //margin: 0 auto;
     padding-right: 40px;
     padding-left: 40px;
+    //display: flex;
   }
 
   .additional-goods__title {
