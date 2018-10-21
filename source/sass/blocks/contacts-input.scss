@@ -1,0 +1,20 @@
+.contacts-input {
+  border: none;
+}
+
+.contacts-input__legend {
+  width: 222px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-input__legend {
+    width: 400px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-input__legend {
+    width: 422px;
+  }
+}
