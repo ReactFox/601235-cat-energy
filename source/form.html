@@ -55,24 +55,25 @@
     </p>
 
     <div class="form-wrapper">
-      <fieldset class="form-order__main field-data">
-        <div class="input-wrapper">
-          <label class="field-data__label form-label" for="name">Имя:<sup class="data-sup">*</sup></label>
-          <input class="field-data__input form-input" id="name" type="text" placeholder="БАРСИК" required>
-        </div>
+      <div  class="form-order__wrapper">
+        <fieldset class="form-order__main field-data">
+          <div class="input-wrapper">
+            <label class="field-data__label form-label" for="name">Имя:<sup class="data-sup">*</sup></label>
+            <input class="field-data__input form-input" id="name" type="text" placeholder="БАРСИК" required>
+          </div>
 
-        <div class="input-wrapper">
-          <label class="field-data__label form-label" for="mass">Вес (кг):<sup class="data-sup">*</sup></label>
-          <input class="field-data__input form-input" id="mass" type="number" placeholder="?" required>
-        </div>
+          <div class="input-wrapper">
+            <label class="field-data__label form-label" for="mass">Вес (кг):<sup class="data-sup">*</sup></label>
+            <input class="field-data__input form-input" id="mass" type="number" placeholder="?" required>
+          </div>
 
-        <div class="input-wrapper">
-          <label class="field-data__label form-label" for="age">Возраст (Лет)</label>
-          <input class="field-data__input form-input" id="age" type="number" placeholder="?">
-        </div>
-      </fieldset>
+          <div class="input-wrapper">
+            <label class="field-data__label form-label" for="age">Возраст (Лет)</label>
+            <input class="field-data__input form-input" id="age" type="number" placeholder="?">
+          </div>
+        </fieldset>
 
-      <fieldset class="form-order__radio radio-data">
+        <fieldset class="form-order__radio radio-data">
         <div class="input-wrapper">
           <input class="radio-data__radio form-radio" id="weight" type="radio" name="radio" value="losing-weight" checked>
           <label class="radio-data__label form-label" for="weight">Похудение</label>
@@ -88,6 +89,7 @@
           <label class="radio-data__label form-label" for="consultation">Не знаю (нужен ваш совет)</label>
         </div>
       </fieldset>
+      </div>
     </div>
 
     <fieldset class="form-order__contacts-data contacts-input">
@@ -97,15 +99,19 @@
           (владельца кота)
         </legend>
 
-        <div class="input-wrapper input-wrapper--padding-size">
-          <label class="contacts-input__label form-label" for="email">E-mail:<sup class="data-sup">*</sup></label>
-          <input class="contacts-input__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com"
-            required>
-        </div>
+        <div class="contacts-input__wrapper">
+          <div class="contacts-input__container">
+            <!--input-wrapper--padding-size было сверху-->
+            <label class="contacts-input__label form-label" for="email">E-mail:<sup class="data-sup">*</sup></label>
+            <input class="contacts-input__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com"
+              required>
+          </div>
 
-        <div class="input-wrapper input-wrapper--padding-size">
-          <label class="contacts-input__label form-label" for="tel">Телефон:<sup class="data-sup">*</sup></label>
-          <input class="contacts-input__input form-input" id="tel" type="tel" placeholder="8 (960) 900-60-90" required>
+          <div class="contacts-input__container">
+            <!-- input-wrapper--padding-size было сверху-->
+            <label class="contacts-input__label form-label" for="tel">Телефон:<sup class="data-sup">*</sup></label>
+            <input class="contacts-input__input form-input" id="tel" type="tel" placeholder="8 (960) 900-60-90" required>
+          </div>
         </div>
       </div>
     </fieldset>

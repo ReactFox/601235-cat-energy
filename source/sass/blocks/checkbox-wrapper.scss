@@ -12,3 +12,13 @@
     padding-left: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox-wrapper {
+    width: 245px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

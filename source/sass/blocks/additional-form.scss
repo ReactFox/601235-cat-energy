@@ -19,6 +19,13 @@
 }
 
 @media (min-width: $desktop-width) {
-
-
+  .additional-form__wrapper {
+    //width: 245px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 40px;
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 }
