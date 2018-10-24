@@ -1,8 +1,130 @@
 .form-order__title {
-  @include reset-indentation;
+  //margin-top: 0;
+  margin-bottom: 38px;
   color: $title-color;
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.form-order__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.form-order__main {
+  @include reset-indentation;
+  border: none;
+}
+
+.form-order__radio {
+  @include reset-indentation;
+  //margin-bottom: 45px;
+}
+
+.form-order__contacts-data {
+  @include reset-indentation;
+  margin-bottom: 35px;
+}
+
+.form-order__aria {
+  @include reset-indentation;
+  margin-bottom: 35px;
+}
+
+.form-order__additional {
+  @include reset-indentation;
+}
+
+.form-order__link {
+  width: 100%;
+  text-align: center;
+}
+
+.form-order__rule {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-order__title {
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+
+  .form-order__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+
+  .form-order__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 40px;
+    //margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  .form-order__link {
+    width: 283px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .form-order__rule {
+    width: 283px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form-order__wrapper {
+
+    flex-direction: row;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+
+  .form-order__main {
+    width: 570px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .form-order__radio {
+    width: 570px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .form-order__link {
+    width: 570px;
+  }
+}
+
+
+//@media (min-width: $tablet-width) {
+//  .form-order__title {
+//    padding-right: 40px;
+//  }
+//
+//  .form-order__main {
+//    padding-right: 40px;
+//  }
+//
+//  .form-order__radio {
+//    margin-right: 40px;
+//  }
+//}

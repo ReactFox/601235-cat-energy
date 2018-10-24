@@ -1,5 +1,6 @@
 body {
   @include oswald-regular;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   background-color: $white-color;

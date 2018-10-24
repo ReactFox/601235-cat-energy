@@ -1,6 +1,8 @@
 .site-list {
-  @include reset-indentation;
   @include oswald-medium;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -9,6 +11,37 @@
 
 .site-list__link {
   display: block;
-  padding-top: 12px;
+  padding-top: 23px;
+  padding-bottom: 20px;
   color: $title-color;
+  border-top: 1px solid $border-color;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .site-list__link {
+    //TODO поработать с паддингами
+    padding: 0;
+    padding-left: 38px;
+    border-top: none;
+    font-size: 18px;
+    line-height: 24.86px;
+  }
+}
+//
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    padding-left: 36px;
+    //color: $white-color;
+    font-size: 20px;
+    line-height: 24.86px;
+  }
 }

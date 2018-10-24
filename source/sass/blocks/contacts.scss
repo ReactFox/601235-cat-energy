@@ -1,17 +1,63 @@
 .contacts {
   background-color: $white-color;
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 31px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  padding-left: 20px;
 }
 
 .contacts__cooperation {
+  @include reset-indentation;
   color: $title-color;
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .contacts__address {
+  @include reset-indentation;
   @include font-regular;
   color: $text-color;
+  width: 140px;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__cooperation {
+    width: 154px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    width: 153px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__address-city {
+    display: inline-block;
+    padding-top: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 570px;
+    margin-left: 40px;
+  }
 }

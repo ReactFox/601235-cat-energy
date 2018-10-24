@@ -1,4 +1,6 @@
 .social__list {
   @include reset-indentation;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }

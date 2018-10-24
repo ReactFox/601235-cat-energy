@@ -1,5 +1,6 @@
 .promo-link {
   display: block;
+  background-color: $green-color;
 }
 
 .promo-link__text {
@@ -8,5 +9,20 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  background-color: $green-color;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-link {
+    //временно высота
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-link {
+    display: inline-block;
+    width: 245px;
+    height: auto;
+    margin-left: 40px;
+  }
 }
