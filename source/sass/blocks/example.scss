@@ -1,5 +1,9 @@
 .example {
-  background-color: $background-grey-color;
+  background-color: $lightgrey-color;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .example__description {
@@ -41,4 +45,31 @@
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-image: linear-gradient(to bottom, $white-color 60%, $lightgrey-color 60%);
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }

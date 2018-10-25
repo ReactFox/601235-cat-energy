@@ -1,0 +1,52 @@
+.contacts-input {
+  border: none;
+}
+
+.contacts-input__legend {
+  width: 222px;
+}
+
+.contacts-input__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.contacts-input__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-input__legend {
+    width: 415px;
+    margin-bottom: 30px;
+  }
+
+  .contacts-input__wrapper {
+    padding-right: 35px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-input__legend {
+    width: 422px;
+  }
+
+  .contacts-input__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+
+  .contacts-input__container {
+    width: 570px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}

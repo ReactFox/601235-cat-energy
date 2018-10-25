@@ -1,3 +1,19 @@
 .main-nav {
   background-color: transparent;
 }
+
+.main-nav__list {
+  @include reset-indentation;
+}
+//
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    width: 510px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 610px;
+  }
+}

@@ -1,22 +1,21 @@
-.form-legend {
-  color: $title-color;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  background-color: $white-color;
+.page-main__title {
+  width: 320px;
+  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .form-legend {
+  .page-main__title {
+    width: $tablet-width;
     padding-right: 30px;
-    padding-left: 40px;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form-legend {
+  .page-main__title {
+    width: $desktop-width;
     padding-right: 40px;
     padding-left: 40px;
   }
