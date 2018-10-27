@@ -193,8 +193,12 @@
         </span>
       </p>
     </div>
-    <a class="page-footer__map map" href="" aria-label="Карта">
-      <img class="map__image" src="http://placehold.it/366x320" alt="Карта">
+    <a class="page-footer__map map container" href="" aria-label="Карта">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+        <img src="img/bg-map-mobile@1x.png" alt="Карта">
+      </picture>
     </a>
 
     <div class="footer-bottom">

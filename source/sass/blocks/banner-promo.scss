@@ -12,9 +12,12 @@
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     position: absolute;
-    right: 0;
-    top: 0;
+    top:0;
+    //left: 0;
+    //right: 0;
+    margin: auto;
     width: 100%;
+    background-position: center center;
     height: 305px;
     z-index: -1;
     //  добавить фото кота фоном отпазиционировать.
@@ -50,8 +53,8 @@
 }
 
 .banner-promo__link {
-  margin-right: 20px;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,37 +110,37 @@
 @media (min-width: $desktop-width) {
   .banner-promo {
     //width: $desktop-width;
-    //position: relative;
-
+    position: static;
+    background-image: linear-gradient(to right, $white-color 50%, $green-color 50%);
     //z-index: 0;
     //transform: translateY(-100px);
-    //position: relative;
-    //z-index: -1;
-    //top: -100px;
+    position: relative;
+    z-index: -5;
+    top: -100px;
 
     &::after {
       content: "";
       background-color: transparent;
-      background-image: linear-gradient(to right, $white-color 50%, $green-color 50%);
-      background-repeat: no-repeat;
-      //background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-image: url("../../img/index-background-desktop@1x.jpg");
               //linear-gradient(to right, $white-color 50%, $green-color 50%);
       //background-position: 50% 0, 100% 0;
       background-repeat: no-repeat;
+      background-position: 50% 0;
       position: absolute;
-      right: 0;
+      //right: 50%;
       top: 0;
       height: 100%;
       width: 100%;
-      z-index: -1;
+      z-index: -4;
     }
   }
 
   .banner-promo__title {
     width: 603px;
-    margin-top: 70px;
+    margin-top: 100px;
     //padding-left: 123px;
     background-color: transparent;
+    padding-top: 0;
   }
 
   .banner-promo__slogan {
