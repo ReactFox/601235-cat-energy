@@ -110,13 +110,12 @@
 @media (min-width: $desktop-width) {
   .banner-promo {
     //width: $desktop-width;
-    position: static;
+    //position: static;
     background-image: linear-gradient(to right, $white-color 50%, $green-color 50%);
-    //z-index: 0;
-    //transform: translateY(-100px);
+        //transform: translateY(-100px);
     position: relative;
     z-index: -5;
-    top: -100px;
+    top: 0;
 
     &::after {
       content: "";
@@ -127,8 +126,8 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       position: absolute;
-      //right: 50%;
-      top: 0;
+      right: 50%;
+      left: 25%;
       height: 100%;
       width: 100%;
       z-index: -4;

@@ -40,32 +40,57 @@
         </li>
       </ul>
     </nav>
+
+    <!--<section class="banner-promo">-->
+      <!--<div class="container">-->
+        <!--<h1 class="visually-hidden">Специальные диеты для котов</h1>-->
+        <!--<div class="banner-promo__title-container">-->
+          <!--<h2 class="banner-promo__title page-title page-title&#45;&#45;white">-->
+            <!--Функциональное-->
+            <!--питание для котов-->
+          <!--</h2>-->
+          <!--<p class="banner-promo__slogan">-->
+            <!--Занялся собой? Займись котом!-->
+          <!--</p>-->
+        <!--</div>-->
+        <!--<div class="banner-promo__image-container">-->
+          <!--<picture>-->
+            <!--<source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">-->
+            <!--<source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">-->
+            <!--<img src="img/index-can-mobile@1x.png" alt="Корм">-->
+          <!--</picture>-->
+
+          <!--&lt;!&ndash;<img class="banner-promo__image" src="./img/index-can-mobile@1x.png" width="280" height="230" alt="Картинка с питанием">&ndash;&gt;-->
+        <!--</div>-->
+        <!--<a class="banner-promo__link btn" href="form.html">-->
+          <!--Подобрать программу-->
+        <!--</a>-->
+      <!--</div>-->
+    <!--</section>-->
   </header>
 
   <section class="banner-promo">
-    <div class="container">
+    <div class="container container--image">
       <h1 class="visually-hidden">Специальные диеты для котов</h1>
       <div class="banner-promo__title-container">
-      <h2 class="banner-promo__title page-title page-title--white">
-        Функциональное
-        питание для котов
-      </h2>
-      <p class="banner-promo__slogan">
-        Занялся собой? Займись котом!
-      </p>
-    </div>
+        <h2 class="banner-promo__title page-title page-title--white">
+          Функциональное
+          питание для котов
+        </h2>
+        <p class="banner-promo__slogan">
+          Занялся собой? Займись котом!
+        </p>
+      </div>
       <div class="banner-promo__image-container">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-        <img src="img/index-can-mobile@1x.png" alt="Корм">
-      </picture>
-
-      <!--<img class="banner-promo__image" src="./img/index-can-mobile@1x.png" width="280" height="230" alt="Картинка с питанием">-->
-    </div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+          <img src="img/index-can-mobile@1x.png" alt="Корм">
+        </picture>
+      </div>
       <a class="banner-promo__link btn" href="form.html">
-      Подобрать программу
-    </a>
+        Подобрать программу
+      </a>
     </div>
   </section>
 
@@ -117,25 +142,29 @@
       </h2>
       <ul class="advantages__list">
         <li class="advantages__item cards-advantages">
-          <img class="cards-advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <img class="cards-advantages__icon" src="./img/advantage-leaf@1x.png"
+               alt="логотип преимуществ" width="50" height="50">
           <p class="cards-advantages__description">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
         <li class="advantages__item cards-advantages">
-          <img class="cards-advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <img class="cards-advantages__icon" src="./img/advantage-powder@1x.png"
+               alt="логотип преимуществ" width="50" height="50">
           <p class="cards-advantages__description">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
         <li class="advantages__item cards-advantages">
-          <img class="cards-advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <img class="cards-advantages__icon" src="./img/advantage-dining@1x.png"
+               alt="логотип преимуществ" width="50" height="50">
           <p class="cards-advantages__description">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
         <li class="advantages__item cards-advantages">
-          <img class="cards-advantages__icon" src="http://placehold.it/60x60" alt="логотип преимуществ">
+          <img class="cards-advantages__icon" src="./img/advantage-clock@1x.png"
+               alt="логотип преимуществ" width="50" height="50">
           <p class="cards-advantages__description">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
@@ -156,15 +185,18 @@
       </p>
 
       <table class="example__stats stats">
-        <tr class="stats__cell">
-          <td class="stats__value">5кг</td>
-          <td class="stats__field">снижение веса</td>
-        </tr>
-        <tr class="stats__cell">
-          <td class="stats__value">60 дней</td>
-          <td class="stats__field">затрачено времени</td>
-        </tr>
+        <tbody class="stats__body">
+          <tr class="stats__cell">
+            <td class="stats__value">5кг</td>
+            <td class="stats__field">снижение веса</td>
+          </tr>
+          <tr class="stats__cell">
+            <td class="stats__value">60 дней</td>
+            <td class="stats__field">затрачено времени</td>
+          </tr>
+        </tbody>
       </table>
+
       <p class="example__total">
         Затраты на питание: 15 000 руб.
       </p>

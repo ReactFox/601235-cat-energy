@@ -1,0 +1,32 @@
+.stats {
+  display: flex;
+  text-align: center;
+}
+
+.stats__body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stats__cell {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  justify-content: center;
+  //align-items: center;
+}
+
+.stats__value {
+  border: 1px solid #b6b6b6;
+  padding: 15px;
+}
+
+.stats__field {
+  width: 80px;
+  align-self: center;
+  margin-top: -10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #f2f2f2;
+}
