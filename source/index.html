@@ -43,8 +43,9 @@
   </header>
 
   <section class="banner-promo">
-    <h1 class="visually-hidden">Специальные диеты для котов</h1>
-    <div class="banner-promo__title-container">
+    <div class="container">
+      <h1 class="visually-hidden">Специальные диеты для котов</h1>
+      <div class="banner-promo__title-container">
       <h2 class="banner-promo__title page-title page-title--white">
         Функциональное
         питание для котов
@@ -53,12 +54,19 @@
         Занялся собой? Займись котом!
       </p>
     </div>
-    <div class="banner-promo__image-container">
-      <img class="banner-promo__image" src="http://placehold.it/280x230" width="280" height="230" alt="Картинка с питанием">
+      <div class="banner-promo__image-container">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img src="img/index-can-mobile@1x.png" alt="Корм">
+      </picture>
+
+      <!--<img class="banner-promo__image" src="./img/index-can-mobile@1x.png" width="280" height="230" alt="Картинка с питанием">-->
     </div>
-    <a class="banner-promo__link btn" href="form.html">
+      <a class="banner-promo__link btn" href="form.html">
       Подобрать программу
     </a>
+    </div>
   </section>
 
   <main class="page-main">

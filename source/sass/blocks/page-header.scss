@@ -1,7 +1,5 @@
 .page-header {
   @include reset-indentation;
-  margin: 0 auto;
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -18,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
+    //width: $tablet-width;
     padding-top: 24px;
     flex-direction: row;
     justify-content: space-between;

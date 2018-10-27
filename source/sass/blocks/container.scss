@@ -1,0 +1,18 @@
+.container {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+  }
+}
