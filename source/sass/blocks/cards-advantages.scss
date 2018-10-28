@@ -1,5 +1,6 @@
 .cards-advantages {
   display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -21,3 +22,8 @@
   margin-right: 10px;
 }
 
+@media (min-width: $tablet-width) {
+  .cards-advantages {
+    flex-direction: column;
+  }
+}
