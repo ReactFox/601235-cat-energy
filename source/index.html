@@ -8,14 +8,14 @@
   <title>HTML Academy: Кэт энерджи. Главная страница</title>
   <!-- Pixel Glass -->
   <style>
-    @media (min-width: 320px) {
+    /*@media (min-width: 320px) {*/
       HTML {
         background-repeat: no-repeat;
         background-position: 50% 0;
         /* По умолчанию показывается мобильный макет */
         background-image: url("img/pixel/cat-energy-index-mobile.jpg");
       }
-    }
+    /*}*/
 
     /* Планшет */
     @media (min-width: 768px) {
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-  <header class="page-header page-header__wrapper">
+  <header class="page-header">
     <div class="container">
       <div class="page-header__logo">
         <a class="page-header__link">
@@ -103,7 +103,7 @@
 
 
   <main class="page-main">
-    <section class="program">
+    <section class="program container">
       <h2 class="visually-hidden">
         Программы диет
       </h2>
