@@ -6,6 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи. Главная страница</title>
+  <!-- Pixel Glass -->
+  <style>
+    @media (min-width: 320px) {
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("img/pixel/cat-energy-index-mobile.jpg");
+      }
+    }
+
+    /* Планшет */
+    @media (min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/pixel/cat-energy-index-tablet.jpg");
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 1300px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/pixel/cat-energy-index-desktop.jpg");
+      }
+    }
+  </style>
+  <link href="./pixel-glass/styles.css" rel="stylesheet">
+  <script src="./pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>

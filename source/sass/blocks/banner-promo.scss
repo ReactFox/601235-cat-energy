@@ -12,7 +12,7 @@
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: 1px;
     margin: auto;
     width: 100%;
     background-position: center center;
@@ -20,6 +20,7 @@
     z-index: -1;
   }
 }
+// todo добавить последнему пункту меню нижний бордер и удалить top: 1px; (он для компенсации)
 
 
 .banner-promo__title {
@@ -27,14 +28,14 @@
   text-align: center;
   padding-top: 29px;
   //padding-right: 36px;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   //padding-left: 35px;
 }
 
 .banner-promo__slogan {
   @include reset-indentation;
   text-align: center;
-  margin-bottom: 47px;
+  margin-bottom: 28px;
   //padding-right: 62px;
   //padding-left: 60px;
   color: $white-color;
@@ -48,10 +49,17 @@
 //  justify-content: center;
 //}
 //
+.banner-promo__img {
+  display: block;
+  margin-bottom: 3px;
+}
+
+
+
 .banner-promo__link {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 9px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   width: 100%;
 }
 
@@ -121,10 +129,11 @@
     //background-image: linear-gradient(to right, $white-color 50%, $green-color 50%);
     //    //transform: translateY(-100px);
     position: static;
-    z-index: -5;
+    //z-index: -5;
     top: 0;
     width: 100%;
-    height: 688px;
+    height: 586px;
+    margin-bottom: 0;
 
     &::after {
       //content: "";
@@ -151,15 +160,21 @@
       //right: 50%;
       //left: 50%;
       right: 0;
-      height: 688px;
+      min-height: 688px;
       width: 50%;
-      z-index: -31;
+      //z-index: -31;
     }
   }
 
 
   .banner-promo__img {
-    top: 30%;
+    //position: absolute;
+    top: 0;
+    //left: 50%;
+    //transform: translateX(-20%);
+    z-index: 0;
+    //transform: translateY(200px);
+    transform: translate(-30%, 30%);
   }
 //
 //  .banner-promo__title-container {
