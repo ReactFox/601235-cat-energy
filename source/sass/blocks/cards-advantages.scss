@@ -3,14 +3,20 @@
   flex-wrap: wrap;
 }
 
+.advantages__title {
+  margin-bottom: 28px;
+  margin-top: -3px;
+}
 
 .cards-advantages__description {
   @include reset-indentation;
   @include font-regular;
   color: $text-color;
+  width: 71%;
   font-size: 14px;
   line-height: 18px;
-  padding-right: 15px;
+  padding-top: 2px;
+  padding-right: 5px;
 }
 
 //@media (min-width: $tablet-width) {
@@ -19,7 +25,7 @@
 .cards-advantages__icon {
   background-color: $green-color;
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
