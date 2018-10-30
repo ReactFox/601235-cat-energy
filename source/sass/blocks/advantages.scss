@@ -1,13 +1,11 @@
-//.advantages {
-//  width: 320px;
-//  margin: 0 auto;
-//  padding-right: 20px;
-//  padding-left: 20px;
-//}
+.advantages {
+  //margin-bottom: 20px;
+}
 
 .advantages__list {
   @include reset-indentation;
   list-style: none;
+  padding-bottom: 22px;
 }
 
 .advantages__item {

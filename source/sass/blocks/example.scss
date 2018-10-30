@@ -1,39 +1,38 @@
 .example {
   background-color: $lightgrey-color;
-  width: 320px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+}
+
+.example__title {
+  padding-top: 17px;
+  padding-bottom: 22px;
 }
 
 .example__description {
   @include font-regular;
+  @include reset-indentation;
   color: $text-color;
+  padding-right: 10px;
+  margin-bottom: 25px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
 }
 
-.stats__value {
-  color: $title-color;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.stats__field {
-  @include font-regular;
-  color: $text-color;
-  font-size: 12px;
-  line-height: 12px;
-}
-
 .example__total {
+  @include reset-indentation;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 35px;
   color: $title-color;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__picture {
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .example__btn {

@@ -1,5 +1,8 @@
 .stats {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -12,17 +15,25 @@
 .stats__cell {
   display: flex;
   flex-direction: column;
-  width: 120px;
+  width: 124px;
   justify-content: center;
   //align-items: center;
 }
 
 .stats__value {
-  border: 1px solid #b6b6b6;
   padding: 15px;
+  color: $title-color;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid #b6b6b6;
 }
 
 .stats__field {
+  @include font-regular;
+  color: $text-color;
+  font-size: 12px;
+  line-height: 12px;
   width: 80px;
   align-self: center;
   margin-top: -10px;
@@ -30,3 +41,4 @@
   padding-left: 10px;
   background-color: #f2f2f2;
 }
+
