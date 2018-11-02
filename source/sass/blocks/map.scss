@@ -6,3 +6,15 @@
 //.map__image {
 //  @include reset-indentation;
 //}
+
+.map__picture {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.map__image {
+  height: 362px;
+  width: 320px;
+  margin-top: -2px;
+  display: block;
+}

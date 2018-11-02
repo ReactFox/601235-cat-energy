@@ -8,6 +8,21 @@
   margin-top: -3px;
 }
 
+.cards-advantages__icon-wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  background-color: $green-color;
+  flex-shrink: 0;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-advantages__icon {
+
+}
+
 .cards-advantages__description {
   @include reset-indentation;
   @include font-regular;
@@ -16,16 +31,6 @@
   font-size: 14px;
   line-height: 18px;
   padding-top: 2px;
-  padding-right: 5px;
-}
-
-//@media (min-width: $tablet-width) {
-//}
-
-.cards-advantages__icon {
-  background-color: $green-color;
-  flex-shrink: 0;
-  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {

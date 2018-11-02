@@ -8,6 +8,7 @@
 .program__list {
   @include reset-indentation;
   list-style: none;
+  width: 100%;
 }
 
 .program__item {
@@ -17,11 +18,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program {
-    width: $tablet-width;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
+  //.program {
+  //  width: $tablet-width;
+  //  padding-right: 30px;
+  //  padding-left: 30px;
+  //}
 
   .program__list {
     display: flex;
@@ -31,21 +32,22 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    width: $desktop-width;
-    padding-right: 40px;
-    padding-left: 40px;
+    margin-bottom: 25px;
   }
 
   .program__list {
+    width: auto;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 45px;
     margin-right: -40px;
     margin-left: -40px;
   }
 
   .program__item {
-    width: 570px;
-    margin: 40px;
+    //width: 570px;
+    //margin: 40px;
     flex-shrink: 0;
+    //margin-top: 30px;
   }
 }

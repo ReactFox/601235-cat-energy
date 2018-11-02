@@ -11,7 +11,7 @@
   @include font-regular;
   @include reset-indentation;
   color: $text-color;
-  padding-right: 10px;
+  //padding-right: 10px;
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 400;
@@ -35,6 +35,17 @@
   margin-left: -20px;
 }
 
+.example__btn-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29.8px;
+  margin-left: 2px;
+  margin-bottom: 34px;
+}
+
 .example__btn {
   @include reset-indentation;
   @include oswald-regular;
@@ -45,6 +56,26 @@
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+}
+
+.example__range-border {
+  width: 84px;
+  height: 12px;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  margin-left: 19px;
+  margin-right: 18px;
+}
+
+.example__range-switch {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $green-color;
 }
 
 @media (min-width: $tablet-width) {

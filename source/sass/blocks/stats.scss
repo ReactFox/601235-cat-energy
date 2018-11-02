@@ -3,34 +3,36 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
+  //text-align: center;
 }
 
-.stats__body {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+//.stats__body {
+//  display: flex;
+//  //justify-content: space-between;
+//  width: 100%;
+//}
 
 .stats__cell {
   display: flex;
   flex-direction: column;
   width: 124px;
-  justify-content: center;
-  //align-items: center;
+   text-align: center;
 }
 
 .stats__value {
+  @include reset-indentation;
   padding: 15px;
   color: $title-color;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   border: 1px solid #b6b6b6;
+  width: 124px;
 }
 
 .stats__field {
   @include font-regular;
+  @include reset-indentation;
   color: $text-color;
   font-size: 12px;
   line-height: 12px;

@@ -34,16 +34,20 @@
     //TODO поработать с паддингами
     //font-: @include;
     padding: 0;
-    padding-left: 38px;
+    margin-left: 37px;
     border-top: none;
     font-size: 18px;
     line-height: 24.86px;
+
+    &--margin-left {
+      margin-left: 34px;
+    }
   }
 }
 //
 @media (min-width: $desktop-width) {
   .site-list__link {
-    padding-left: 36px;
+    //padding-left: 36px;
     color: $white-color;
     font-size: 20px;
     line-height: 24.86px;

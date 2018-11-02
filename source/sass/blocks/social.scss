@@ -1,6 +1,20 @@
+.social {
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+}
+
 .social__list {
   @include reset-indentation;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: center;
+  //align-items: center;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.social__item {
+  padding: 0 25px;
+  margin-left: -10px;
 }
