@@ -1,4 +1,5 @@
 .main-nav {
+  color: $title-color;
   background-color: transparent;
   width: 320px;
   margin-right: -20px;
@@ -10,11 +11,6 @@
 }
 //
 @media (min-width: $tablet-width) {
-  //.main-nav__list {
-  //  //width: 510px;
-  //}
-//}
-
   .main-nav {
     width: 518px;
     margin-right: 0;

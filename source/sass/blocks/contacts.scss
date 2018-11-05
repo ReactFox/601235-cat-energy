@@ -32,10 +32,12 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: $tablet-width;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-top: 64px;
+    padding-right: 72px;
+    padding-left: 71px;
+    padding-bottom: 61px;
     justify-content: space-between;
-    align-items: center;
+    //align-items: center;
   }
 
   .contacts__cooperation {
@@ -45,20 +47,28 @@
   }
 
   .contacts__address {
-    width: 153px;
+    width: 156px;
     font-size: 16px;
     text-align: right;
   }
 
   .contacts__address-city {
     display: inline-block;
-    padding-top: 23px;
+    padding-top: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: absolute;
     width: 570px;
     margin-left: 40px;
+    top: 95px;
+    padding-left: 76px;
+    padding-right: 90px;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }

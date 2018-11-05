@@ -17,6 +17,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-bottom {
+    padding-top: 53px;
+    padding-bottom: 57px;
+  }
+
   .footer-bottom__wrapper {
     width: $tablet-width;
     flex-direction: row;

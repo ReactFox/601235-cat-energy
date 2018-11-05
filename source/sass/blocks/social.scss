@@ -18,3 +18,20 @@
   padding: 0 25px;
   margin-left: -10px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: auto;
+    border-bottom: none;
+  }
+
+  .social__list {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .social__item {
+    padding: 0 17px;
+    margin-left: 0;
+  }
+}

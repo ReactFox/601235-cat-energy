@@ -3,11 +3,6 @@
   flex-wrap: wrap;
 }
 
-.advantages__title {
-  margin-bottom: 28px;
-  margin-top: -3px;
-}
-
 .cards-advantages__icon-wrapper {
   width: 60px;
   height: 60px;
@@ -17,10 +12,6 @@
   margin-right: 20px;
   justify-content: center;
   align-items: center;
-}
-
-.cards-advantages__icon {
-
 }
 
 .cards-advantages__description {
@@ -36,5 +27,26 @@
 @media (min-width: $tablet-width) {
   .cards-advantages {
     flex-direction: column;
+    position: relative;
+  }
+
+  .cards-advantages__icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .cards-advantages__description {
+    margin-bottom: 48px;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards-advantages__description {
+    width: 100%;
   }
 }

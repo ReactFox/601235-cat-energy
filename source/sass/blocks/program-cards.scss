@@ -74,14 +74,46 @@
 
 .program-cards__link {
   @include reset-indentation;
+  position: relative;
   color: $title-color;
-  display: block;
-  padding-top: 19px;
-  padding-bottom: 23px;
+  display: inline-block;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-left: 1px;
+  padding-right: 37px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.program-cards__link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 28px;
+  right: 0;
+  top: 23px;
+  height: 11px;
+  //margin-left: 5px;
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 11px;
+  background-position: right center;
+}
+
+
+.program-cards__link:hover::after,
+.program-cards__link:focus::after {
+  width: 33px;
+  background-image: url("../../img/icon-right-arrow-verylong.svg");
+  outline: none;
+  top: 23px;
+  right: -4px;
+}
+
+.program-cards__link:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -138,9 +170,13 @@
   }
 
   .program-cards__link {
+    width: 375px;
     font-size: 20px;
     line-height: 20px;
-    width: 375px;
+  }
+
+  .program-cards__link::after {
+    margin-right: 19px;
   }
 }
 

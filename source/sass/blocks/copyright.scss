@@ -11,3 +11,12 @@
   padding-top: 20px;
   padding-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
