@@ -123,6 +123,7 @@
     padding-left: 52px;
     padding-bottom: 38px;
     margin-bottom: 30px;
+    flex-direction: column;
 
     &::before {
       width: 200px;
@@ -170,14 +171,21 @@
   }
 
   .program-cards__link {
-    width: 375px;
+    width: 160px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .program-cards__link::after {
-    margin-right: 19px;
+  .program-cards__link--arrow-position::after {
+    right: 6px;
   }
+
+  .program-cards__link--arrow-position:hover::after {
+    right: 2px;
+  }
+  //.program-cards__link::after {
+  //  //margin-right: 19px;
+  //}
 }
 
 @media (min-width: $desktop-width) {
@@ -190,6 +198,7 @@
     padding-bottom: 48px;
     margin-right: 40px;
     margin-left: 40px;
+    flex-direction: row;
 
     &::before {
       width: 100px;
@@ -234,6 +243,10 @@
     .program-cards__link {
       padding-top: 13px;
       padding-bottom: 13px;
+    }
+
+    .program-cards__link::after {
+      top: 16px;
     }
   }
 }

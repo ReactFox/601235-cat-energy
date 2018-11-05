@@ -64,6 +64,7 @@
 
   .map__image {
     width: 100%;
+    min-height: 394px;
   }
 }
 
@@ -77,10 +78,11 @@
     //margin-left: -40px;
     //margin-right: -40px;
     margin: 0 auto;
-    width: 100%;
+    width: 1440px;
   }
 
   .map__image {
     width: 100%;
+    min-height: 400px;
   }
 }
