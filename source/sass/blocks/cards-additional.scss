@@ -58,11 +58,16 @@
     padding-right: 37px;
     //padding-bottom: 27px;
     padding-left: 37px;
-    border: none;
-    //border: 1px solid black;
-    outline: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-bottom: none;
+    //outline: 1px solid #cdcdcd;
     //margin-top: -1px;
-    margin-top: 2px;
+    //margin-top: 2px;
+  }
+
+  .cards-additional:last-child {
+    border-bottom: 1px solid #cdcdcd;
   }
 
   //TODO сделать нормальные границы.

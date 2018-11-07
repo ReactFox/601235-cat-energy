@@ -76,7 +76,25 @@
 @media (min-width: $tablet-width) {
   .promo-link {
     //временно высота
-    height: 200px;
+    //height: 200px;
+    margin-top: 69px;
+    padding-bottom: 68px;
+    justify-content: flex-end;
+  }
+
+  //TODO позиционирование текста
+
+  .promo-link__text {
+    display: flex;
+    text-align: left;
+    width: 230px;
+    padding-right: 60px;
+    //vertical-align: top;
+  }
+
+  .promo-link::before {
+    margin: 0;
+    left: 91px;
   }
 }
 
