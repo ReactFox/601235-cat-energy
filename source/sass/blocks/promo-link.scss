@@ -1,10 +1,39 @@
 .promo-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
   background-color: $green-color;
+  width: 100%;
+  min-height: 289px;
+  margin-top: 40px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 63px;
+  padding-bottom: 43px;
+  margin-bottom: 32px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 280px 289px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 280px;
+    //background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .promo-link__text {
+  @include reset-indentation;
   @include font-regular;
+  text-align: center;
+  white-space: pre-line;
   color: $white-color;
   font-size: 16px;
   font-weight: 400;

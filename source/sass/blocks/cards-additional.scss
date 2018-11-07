@@ -10,7 +10,7 @@
   color: $title-color-additional-goods;
   width: 280px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -43,30 +43,52 @@
 
 .cards-additional__link {
   width: 100%;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  margin-bottom: 17px;
   text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  //text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .cards-additional {
+    padding-top: 26px;
     padding-right: 37px;
     //padding-bottom: 27px;
     padding-left: 37px;
+    border: none;
+    //border: 1px solid black;
+    outline: 1px solid #cdcdcd;
+    //margin-top: -1px;
+    margin-top: 2px;
   }
+
+  //TODO сделать нормальные границы.
 
   .cards-additional__title {
     margin: 0;
     width: 407px;
+    font-size: 20px;
+    line-height: 20px;
   }
+
 
   .cards-additional__description {
     padding-bottom: 0;
-    width: 129px;
+    width: 128px;
     display: flex;
     justify-content: flex-end;
   }
 
   .cards-additional__price {
     width: 97px;
+  }
+
+  .cards-additional__link {
+    margin-top: 26px;
+    margin-bottom: 27px;
   }
 }
 

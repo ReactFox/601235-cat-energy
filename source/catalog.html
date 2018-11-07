@@ -90,7 +90,7 @@
       <!--<div class="container">-->
         <!--<div class="row-container">-->
           <li class="basic-goods__item">
-            <div class="basic-goods__link cards" href="#">
+            <div class="basic-goods__link cards">
               <a class="cards__image-wrapper" href="#">
                 <picture class="cards__picture">
                   <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
@@ -128,7 +128,7 @@
       <!--</div>-->
       <!--товар 2-->
       <li class="basic-goods__item">
-        <div class="basic-goods__link cards" href="#">
+        <div class="basic-goods__link cards">
           <a class="cards__image-wrapper" href="#">
             <picture class="cards__picture">
               <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
@@ -165,7 +165,7 @@
 
       <!--товар 3-->
       <li class="basic-goods__item">
-        <div class="basic-goods__link cards" href="#">
+        <div class="basic-goods__link cards">
           <a class="cards__image-wrapper" href="#">
             <picture class="cards__picture">
               <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
@@ -202,7 +202,7 @@
 
       <!--товар 4-->
       <li class="basic-goods__item">
-        <div class="basic-goods__link cards" href="#">
+        <div class="basic-goods__link cards">
           <a class="cards__image-wrapper" href="#">
             <picture class="cards__picture">
               <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
@@ -239,7 +239,7 @@
 
       <!--товра 5-->
       <li class="basic-goods__item">
-        <div class="basic-goods__link cards" href="#">
+        <div class="basic-goods__link cards">
           <a class="cards__image-wrapper" href="#">
             <picture class="cards__picture">
               <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
@@ -249,7 +249,7 @@
           </a>
           <div class="cards__description-wrapper">
             <a class="cards__title__link">
-              <h3 class="cards__title" href="#">
+              <h3 class="cards__title">
                 Cat energy slim 500 г
               </h3>
             </a>
@@ -276,7 +276,7 @@
 
       <!--товар 6-->
       <li class="basic-goods__item">
-        <div class="basic-goods__link cards" href="#">
+        <div class="basic-goods__link cards">
           <a class="cards__image-wrapper" href="#">
             <picture class="cards__picture">
               <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
@@ -286,7 +286,7 @@
           </a>
           <div class="cards__description-wrapper">
             <a class="cards__title__link">
-              <h3 class="cards__title" href="#">
+              <h3 class="cards__title">
                 Cat energy slim 1000 г
               </h3>
             </a>
@@ -313,7 +313,7 @@
 
       <!--товар 7-->
       <li class="basic-goods__item">
-        <div class="basic-goods__link cards" href="#">
+        <div class="basic-goods__link cards">
           <a class="cards__image-wrapper" href="#">
             <picture class="cards__picture">
               <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
@@ -362,7 +362,7 @@
               </h3>
             <!--</a>-->
             <p class="other-goods__description">
-              На самом деле вкусов гораздо больше
+              На самом деле вкусов гораздо больше!
             </p>
             <a class="other-goods__link btn btn--color" href="other-goods.hmtl">
               Показать всё
@@ -373,8 +373,15 @@
     </div>
   </section>
 
+
+
+<!--TODO делаю ниже отбивка-->
+
+
+
+
   <section class="additional-goods">
-    <div class="additional-goods__wrapper">
+    <div class="container">
       <h2 class="additional-goods__title">
         Дополнительные товары
       </h2>
@@ -384,50 +391,57 @@
      и зелёной линии h2 если задал бы флекс additional-goods
      wraper то сломалось бы вёрстака, h2 ужался бы под содержанию
      и уехал в центр страницы-->
-    <div class="additional-goods__wrapper additional-goods__wrapper--flex">
+    <div class="container">
       <ul class="additional-goods__list">
         <li class="additional-goods__item cards-additional">
           <h3 class="cards-additional__title">Сахарозаменитель</h3>
           <p class="cards-additional__description">1 упаковка (100 г)</p>
           <span class="cards-additional__price">100 р.</span>
           <a class="btn cards-additional__link" href="order.html">
-            Закзать
+            Закaзать
           </a>
         </li>
+
+
         <li class="additional-goods__item cards-additional">
           <h3 class="cards-additional__title">Питьевая вода</h3>
           <p class="cards-additional__description">5 литров</p>
           <span class="cards-additional__price">50 р.</span>
           <a class="btn cards-additional__link" href="order.html">
-            Закзать
+            Закaзать
           </a>
         </li>
+
+
         <li class="additional-goods__item cards-additional">
           <h3 class="cards-additional__title">Молоко</h3>
           <p class="cards-additional__description">1 литр</p>
           <span class="cards-additional__price">100 р.</span>
           <a class="btn cards-additional__link" href="order.html">
-            Закзать
+            Закaзать
           </a>
         </li>
+
+
         <li class="additional-goods__item cards-additional">
           <h3 class="cards-additional__title">Витамины</h3>
           <p class="cards-additional__description">1 упаковка (30 г)</p>
           <span class="cards-additional__price">300 р.</span>
           <a class="btn cards-additional__link" href="order.html">
-            Закзать
+            Закaзать
           </a>
         </li>
       </ul>
 
+
+
       <a class="promo-link promo-link--icon" href="order-all.html">
-        <div class="promo-link__wrapper">
+        <!--<div class="promo-link__wrapper">-->
           <p class="promo-link__text">
             Закажите все
-            и получите чехол для
-            кота в подарок!
+            и получите чехол для кота в подарок!
           </p>
-        </div>
+        <!--</div>-->
       </a>
     </div>
   </section>
