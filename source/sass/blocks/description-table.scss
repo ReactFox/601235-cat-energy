@@ -1,5 +1,4 @@
 .description-table {
-  @include reset-indentation;
   @include font-regular;
   color: $text-color;
   font-size: 12px;
@@ -10,12 +9,22 @@
 .description-table__row {
   display: flex;
   width: 140px;
+  //TODO глянуть зачем нужно
   justify-content: space-between;
 }
 
 @media (min-width: $tablet-width) {
   .description-table__row {
-    width: 240px;
+    width: 250px;
     font-size: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-table__row {
+    width: 168px;
   }
 }

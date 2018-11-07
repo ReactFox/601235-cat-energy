@@ -2,6 +2,8 @@
 @import "./varibals";
 @import "./mixins.scss";
 @import "./main-style";
+@import "blocks/container";
+@import "blocks/row-container";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/page-title";
@@ -9,21 +11,24 @@
 @import "blocks/btn";
 @import "blocks/banner-promo";
 @import "blocks/page-main";
-@import "blocks/program-list";
+@import "blocks/program";
 @import "blocks/program-cards";
 @import "blocks/advantages";
 @import "blocks/cards-advantages";
 @import "blocks/example";
+@import "blocks/stats";
 @import "blocks/page-footer";
 @import "blocks/contacts";
 @import "blocks/map";
 @import "blocks/footer-bottom";
+@import "blocks/footer-logo";
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/basic-goods";
 @import "blocks/cards";
 @import "blocks/description-table";
 @import "blocks/other-goods";
+//todo продолжить сдесь
 @import "blocks/additional-goods";
 @import "blocks/cards-additional";
 @import "blocks/promo-link";

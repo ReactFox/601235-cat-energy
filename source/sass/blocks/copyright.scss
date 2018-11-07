@@ -1,4 +1,22 @@
 .copyright {
+  @include font-regular;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }

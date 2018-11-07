@@ -1,24 +1,53 @@
 .page-header {
-  @include reset-indentation;
-  margin: 0 auto;
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   border-bottom: 1px solid $border-color;
 }
 
-.page-header__logo {
+.page-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 100%;
 }
+
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 202px;
+    height: 59px;
+  }
+}
+
+
+//  &--tablet {
+//    @media (min-width: $tablet-width) and (max-width: 1299px) {
+//      display: block;?
+//      width: 173px;
+//      height: 58px;
+//
+//    }
+//    }
+//  }
+//
+//  &--desktop {
+//    @media (min-width: $desktop-width) {
+//      display: block;
+//    }
+//  }
+//}
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
     padding-top: 24px;
     flex-direction: row;
     justify-content: space-between;
@@ -26,18 +55,33 @@
     border-bottom: none;
   }
 
-  .page-header__wrapper {
-    margin: 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
+  //.page-header__wrapper {
+  //  margin: 0 auto;
+  //  padding-right: 30px;
+  //  padding-left: 30px;
+  //}
 
-  .page-header__logo {
+  .page-header__top {
     justify-content: flex-start;
     width: 190px;
-    padding-right: 0;
-    padding-left: 0;
+    //padding-top: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    //padding-right: 0;
+    //padding-left: 0;
   }
+
+  .page-header__link:hover,
+  .page-header__link:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  .page-header__link:active {
+    opacity: 0.6;
+    outline: none;
+  }
+
 
   .page-header__toggle {
     display: none;
@@ -46,17 +90,19 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: $desktop-width;
+    //width: $desktop-width;
     padding-top: 54px;
   }
 
-  .page-header__wrapper {
-    margin: 0 auto;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+  //.page-header__wrapper {
+  //  margin: 0 auto;
+  //  padding-right: 40px;
+  //  padding-left: 40px;
+  //}
 
-  .page-header__logo {
-    width: 610px;
+  .page-header__top {
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

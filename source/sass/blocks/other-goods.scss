@@ -5,11 +5,49 @@
   align-items: center;
 }
 
+.other-goods__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //margin-top: 57px;
+  padding-top: 80px;
+}
+
+.other-goods__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  display: block;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  //todo отцентровать в IE
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/icon-plus.svg");
+    width: 60px;
+    height: 60px;
+    top: 56px;
+  }
+}
+//.other-goods__link {
+//
+//}
+
 .other-goods__title {
   @include reset-indentation;
   @include oswald-regular;
+  margin-bottom: 8px;
   color: $title-color;
-  margin-top: 82px;
+  //margin-top: 82px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -19,6 +57,7 @@
 .other-goods__description {
   @include reset-indentation;
   @include font-regular;
+  margin-bottom: 18px;
   color: $text-color;
   font-size: 12px;
   font-weight: 400;
@@ -28,7 +67,12 @@
 .other-goods__link {
   width: 100%;
   text-align: center;
-  margin-top: 25px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .btn--color {
@@ -38,12 +82,68 @@
 
 @media (min-width: $tablet-width) {
   .other-goods {
-    box-shadow: inset 0 0 0 1px $lightgrey-color;
+    padding-top: 84px;
+    padding-bottom: 0;
+
     background-color: $white-color;
+    background-image: none;
+  }
+
+  .other-goods__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 165px;
+    box-shadow: inset 0 0 0 1px $lightgrey-color;
+  }
+
+  .other-goods__title {
+    width: 135px;
+    height: 38px;
+    margin-bottom: 27px;
+    color: $title-color;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .other-goods__description {
+    width: 169px;
+    text-align: center;
+    margin-bottom: 84px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
   }
 
   .other-goods__link {
+    width: 248px;
+    margin-right: 37px;
+    //text-align: center;
+    margin-left: 38px;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    padding-bottom: 10px;
     font-size: 16px;
-    margin-top: auto;
+  }
+
+  .other-goods__link:hover,
+  .other-goods__link:focus {
+    background-color: #ebebeb;
+    outline: none;
+  }
+
+  .other-goods__link:active {
+    //background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .other-goods__link {
+    width: 169px;
   }
 }

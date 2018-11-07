@@ -1,62 +1,85 @@
-.basic-goods {
-  margin: 0 auto;
-  width: 320px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+
 
 .basic-goods__list {
-  @include reset-indentation;
+  //@include reset-indentation;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
+.basic-goods__item {
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  border: 1px solid #ededed;
+  //margin-top: -1px;
+  //margin-bottom: -1px;
+  //outline: 1px solid #ededed;
+  //box-shadow: 0 0 0 1px #ededed;
+  border-top: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+}
+
+.basic-goods__item:last-child {
+  border-bottom: 1px solid #ededed;
+}
+
 @media (min-width: $tablet-width) {
-  .basic-goods {
-    width: $tablet-width;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-
   .basic-goods__list {
+    width: 768px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-left: -30px;
+    //margin-right: -30px;
+    //margin-left: -30px;
+    //border: none;
   }
 
   .basic-goods__item {
-    width: 324px;
-    flex-shrink: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    padding-right: 37px;
-    padding-bottom: 40px;
-    padding-left: 38px;
+    width: calc(50% - 60px);
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    margin-right: 30px;
+    margin-bottom: 55px;
+    margin-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
     background-color: $lightgrey-color;
+    background-image: linear-gradient(to bottom, $white-color 83px, $lightgrey-color 83px);
+    border: none;
+  }
+
+  .basic-goods__item:last-child {
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .basic-goods {
-    width: $desktop-width;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+  //.basic-goods {
+  //  width: $desktop-width;
+  //
+  //}
 
   .basic-goods__list {
-    margin-right: -40px;
-    margin-left: -40px;
+    width: $desktop-width;
+    //margin-right: -40px;
+    //margin-left: -40px;
   }
 
   .basic-goods__item {
-    width: 245px;
+    //width: 245px;
+    width: calc(25% - 80px);
     margin-right: 40px;
     margin-left: 40px;
+    margin-bottom: 58px;
     padding-left: 0;
     padding-right: 0;
   }

@@ -1,5 +1,9 @@
 .main-nav {
+  color: $title-color;
   background-color: transparent;
+  width: 320px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .main-nav__list {
@@ -7,13 +11,22 @@
 }
 //
 @media (min-width: $tablet-width) {
-  .main-nav__list {
-    width: 510px;
+  .main-nav {
+    width: 518px;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+
   .main-nav__list {
-    width: 610px;
+    //width: 610px;
   }
 }

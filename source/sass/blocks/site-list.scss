@@ -10,10 +10,10 @@
 }
 
 .site-list__link {
+  color: $title-color;
   display: block;
   padding-top: 23px;
-  padding-bottom: 20px;
-  color: $title-color;
+  padding-bottom: 22px;
   border-top: 1px solid $border-color;
 }
 
@@ -23,25 +23,80 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
+    @include oswald-regular;
     flex-direction: row;
     justify-content: flex-end;
+    width: 100%;
+    //align-items: center;
   }
 
   .site-list__link {
-    //TODO поработать с паддингами
-    padding: 0;
-    padding-left: 38px;
+    position: relative;
+    padding: 12px 0;
+    margin-left: 37px;
     border-top: none;
     font-size: 18px;
     line-height: 24.86px;
   }
+
+  .site-list__link--margin-left {
+    margin-left: 34px;
+  }
+
+  .site-list__link:hover,
+  .site-list__link:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  .site-list__link--current:hover {
+    opacity: 1;
+  }
+
+  .site-list__link:active {
+    opacity: 1;
+    outline: none;
+  }
+
+  .site-list__link:active::after {
+    //opacity: 1;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid $green-color;
+    bottom: 0;
+    //opacity: 1;
+  }
+
+  .site-list__link--current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid $green-color;
+    bottom: 0;
+    opacity: 1;
+    //background-color: #111111;
+  }
 }
-//
+
 @media (min-width: $desktop-width) {
   .site-list__link {
-    padding-left: 36px;
-    //color: $white-color;
+    //padding-left: 36px;
     font-size: 20px;
     line-height: 24.86px;
+
+    &--white {
+      color: $white-color;
+    }
+
+    &--white::after {
+      border-bottom-color: $white-color;
+    }
+
+    &--white:active::after {
+      border-bottom-color: $white-color;
+    }
   }
 }
