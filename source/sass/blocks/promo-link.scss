@@ -1,14 +1,16 @@
 .promo-link {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  //justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
   background-color: #73b74a;
   width: 100%;
   min-height: 289px;
   margin-top: 40px;
-  padding-left: 55px;
-  padding-right: 55px;
+  //padding-left: 55px;
+  //padding-right: 55px;
   padding-top: 63px;
   padding-bottom: 43px;
   margin-bottom: 32px;
@@ -65,8 +67,13 @@
 .promo-link__text {
   @include reset-indentation;
   @include font-regular;
+  width: 160px;
+  //margin-left: auto;
+  //margin-right: 55px;
   text-align: center;
-  white-space: pre-line;
+  //white-space: pre-line;
+
+  //экспиримент с отступами
   color: $white-color;
   font-size: 16px;
   font-weight: 400;
@@ -79,6 +86,7 @@
     //height: 200px;
     margin-top: 69px;
     padding-bottom: 68px;
+    margin-bottom: 76px;
     justify-content: flex-end;
   }
 
@@ -89,6 +97,8 @@
     text-align: left;
     width: 230px;
     padding-right: 60px;
+    margin-left: auto;
+    margin-right: 55px;
     //vertical-align: top;
   }
 
@@ -100,9 +110,28 @@
 
 @media (min-width: $desktop-width) {
   .promo-link {
-    display: inline-block;
+    //display: flex;
     width: 245px;
     height: auto;
+    margin-top: 0;
     margin-left: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+    //padding-left: 40px;
+    //padding-right: 39px;
+    padding-bottom: 43px;
+  }
+
+  .promo-link::before {
+    left: 96px;
+  }
+
+  .promo-link__text {
+    width: 165px;
+    text-align: center;
+    padding-right: 0;
+    overflow-wrap: break-word;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

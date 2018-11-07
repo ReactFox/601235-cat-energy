@@ -1,5 +1,6 @@
 .footer-logo {
-  width: 100%;
+  //width: 129px;
+  //height: 41px;
   padding-top: 42px;
   padding-bottom: 31px;
   border-bottom: 1px solid #dadada;
@@ -7,9 +8,15 @@
 
 @media (min-width: $tablet-width) {
   .footer-logo {
-    width: auto;
+    //width: 129px;
+    //height: 41px;
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
+  }
+
+  .footer-logo__img {
+    width: 129px;
+    height: 41px;
   }
 }

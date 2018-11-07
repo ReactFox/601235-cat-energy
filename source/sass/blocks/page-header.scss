@@ -15,13 +15,16 @@
 }
 
 .page-header__logo-image {
+  width: 191px;
+  height: 38px;
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 173px;
     height: 58px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: block;
     width: 202px;
     height: 59px;
