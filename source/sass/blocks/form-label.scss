@@ -3,4 +3,18 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 14.5px;
+
+  &--ege-width {
+    width: 93px;
+    flex-shrink: 0;
+  }
+
+  &--email-margin {
+    margin-right: 11.5px;
+  }
+
+  &--tel-margin {
+    margin-right: 9.5px;
+  }
 }

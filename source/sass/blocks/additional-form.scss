@@ -1,31 +1,78 @@
 .additional-form {
+  width: 100%;
   border: none;
-  border-top: 3px solid $green-color;
 }
 
 .additional-form__legend {
-  width: 222px;
+  width: 164px;
+  margin-bottom: 37px;
 }
 
-@media (min-width: $tablet-width) {
-  .additional-form__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 40px;
-    margin-right: -30px;
-    margin-left: -30px;
-  }
+.additional-form__label {
+  position: relative;
+  padding-left: 45px;
 }
 
-@media (min-width: $desktop-width) {
-  .additional-form__wrapper {
-    //width: 245px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 40px;
-    margin-right: -40px;
-    margin-left: -40px;
-  }
+.additional-form__label:active {
+  opacity: 0.3;
 }
+
+.additional-form__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 18px;
+  display: block;
+}
+
+
+//
+//.radio-data__label::before {
+//  content: "";
+//  position: absolute;
+//  top: -4px;
+//  left: 18px;
+//  display: block;
+//}
+
+.additional-form__checkbox + .additional-form__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  padding: 6px 3px 6px 4px;
+  border: 1px solid #cdcdcd;
+}
+
+
+.additional-form__checkbox:checked + .additional-form__label::before {
+  background: url("../../img/icon-tick.svg") no-repeat center;
+  background-size: 21px auto;
+  background-clip: content-box;
+}
+
+//@media (min-width: $tablet-width) {
+  //.additional-form__wrapper {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  flex-direction: row;
+  //  padding-left: 40px;
+  //  margin-right: -30px;
+  //  margin-left: -30px;
+  //}
+//}
+
+//@media (min-width: $desktop-width) {
+//  .additional-form__wrapper {
+  //  //width: 245px;
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  flex-direction: row;
+  //  padding-left: 40px;
+  //  margin-right: -40px;
+  //  margin-left: -40px;
+  //}
+//}

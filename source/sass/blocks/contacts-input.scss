@@ -1,9 +1,12 @@
 .contacts-input {
+  width: 100%;
   border: none;
+  //position: relative;
 }
 
 .contacts-input__legend {
-  width: 222px;
+  margin-top: 3.2px;
+  margin-bottom: 34px;
 }
 
 .contacts-input__wrapper {
@@ -12,10 +15,50 @@
 }
 
 .contacts-input__container {
-  display: flex;
   width: 100%;
+  position: relative;
+  margin-bottom: 13px;
+  display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
+
+.contacts-input__icon {
+  position: absolute;
+  //width: 20px;
+  top: 14px;
+  //right: 13px;
+  display: block;
+
+  &--mobile {
+    width: 20px;
+    //top: 14px;
+    right: 13px;
+  }
+
+  &--mail {
+    width: 17px;
+    height: 17px;
+    //top: 14px;
+    right: 16px;
+  }
+}
+
+.contacts-input__icon-path {
+  fill: $title-color-additional-goods;
+}
+
+.contacts-input__input:hover + .contacts-input__icon .contacts-input__icon-path {
+  fill: $title-color-additional-goods;
+}
+
+.contacts-input__input:focus + .contacts-input__icon .contacts-input__icon-path {
+  fill: $green-color;
+}
+//
+//.contacts-input__label {
+//  margin-right: 14.5px;
+//}
 
 @media (min-width: $tablet-width) {
   .contacts-input__legend {
