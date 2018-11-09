@@ -4,10 +4,10 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 14.5px;
+  flex-shrink: 0;
 
-  &--ege-width {
-    width: 93px;
-    flex-shrink: 0;
+  &--age-margin {
+    margin-right: 18.5px;
   }
 
   &--email-margin {
@@ -16,5 +16,33 @@
 
   &--tel-margin {
     margin-right: 9.5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-label {
+    color: $title-color-additional-goods;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--name-margin {
+      margin-right: 17.5px;
+    }
+
+    &--mass-margin {
+      margin-right: 21.5px;
+    }
+
+    &--age-margin {
+      margin-right: 17.5px;
+    }
+
+    &--email-margin {
+      margin-right: 20.5px;
+    }
+
+    &--tel-margin {
+      margin-right: 15.5px;
+    }
   }
 }

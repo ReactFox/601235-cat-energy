@@ -30,3 +30,15 @@
   }
   //  убирает баг в мобильной мозилле
 }
+
+
+@media (min-width: $tablet-width) {
+  .form-input {
+    height: 53px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $text-color;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

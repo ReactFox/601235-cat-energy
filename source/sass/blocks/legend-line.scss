@@ -39,6 +39,7 @@
 
   .legend-line::after {
     width: 100vw;
+    top: 23px;
     left: 0;
   }
 
@@ -46,7 +47,7 @@
     position: absolute;
     display: inline-block;
     width: 100vh;
-    top: 14px;
+    top: 23px;
     right: 100%;
     content: "";
     height: 3px;

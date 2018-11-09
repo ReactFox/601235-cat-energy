@@ -41,10 +41,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-aria__legend {
+    width: 259px;
+    margin-bottom: 77px;
+  }
+
+
   .form-aria__text {
-    width: 693px;
-    margin-left: 40px;
-    margin-right: 30px;
+    width: 631px;
+    min-height: 174px;
+    padding-top: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 9px;
+    color: $text-color;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

@@ -88,7 +88,7 @@
   <form class="form-order" action="https://echo.htmlacademy.ru" method="POST">
 
     <div class="container">
-      <p class="form-order__title">
+      <p class="form-order__title form-wrapper">
         Заполните анкету и мы подберем
         программу питания для вашего кота
       </p>
@@ -96,19 +96,21 @@
 
     <div class="container">
       <fieldset class="form-order__main field-data">
-        <div class="input-wrapper">
-          <label class="field-data__label form-label" for="name">Имя:<sup class="data-sup">*</sup></label>
-          <input class="field-data__input form-input" id="name" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="БАРСИК" required>
-        </div>
+        <div class="form-wrapper">
+          <div class="input-wrapper">
+            <label class="field-data__label form-label form-label--name-margin" for="name">Имя:<sup class="data-sup">*</sup></label>
+            <input class="field-data__input form-input" id="name" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="БАРСИК" required>
+          </div>
 
-        <div class="input-wrapper">
-          <label class="field-data__label form-label" for="mass">Вес (кг):<sup class="data-sup">*</sup></label>
-          <input class="field-data__input form-input" id="mass" type="text" placeholder="7" required>
-        </div>
+          <div class="input-wrapper">
+            <label class="field-data__label form-label form-label--mass-margin" for="mass">Вес (кг):<sup class="data-sup">*</sup></label>
+            <input class="field-data__input form-input" id="mass" type="text" placeholder="7" required>
+          </div>
 
-        <div class="input-wrapper">
-          <label class="field-data__label form-label form-label--ege-width" for="age">Возраст (Лет)</label>
-          <input class="field-data__input form-input form-input--ege-width" id="age" type="text" placeholder="7">
+          <div class="input-wrapper">
+            <label class="field-data__label form-label form-label--age-margin" for="age">Возраст (Лет):</label>
+            <input class="field-data__input form-input" id="age" type="text" placeholder="7">
+          </div>
         </div>
       </fieldset>
 
@@ -137,9 +139,8 @@
           (владельца кота)
         </legend>
 
-        <!--<div class="contacts-input__wrapper">-->
+        <div class="form-wrapper">
           <div class="contacts-input__container">
-            <!--input-wrapper--padding-size было сверху-->
             <label class="contacts-input__label form-label form-label--email-margin" for="email">E-mail:<sup class="data-sup">*</sup></label>
             <input class="contacts-input__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com"
               required>
@@ -153,15 +154,15 @@
             <label class="contacts-input__label form-label form-label--tel-margin" for="tel">Телефон:<sup class="data-sup">*</sup></label>
             <input class="contacts-input__input form-input" id="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Ввидите не менее 7 цифр" placeholder="8 (960) 900-60-90" required>
             <svg class="contacts-input__icon contacts-input__icon--mobile" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-  <path class="contacts-input__icon-path" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-  <path class="contacts-input__icon-path"
-    d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-  c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-  C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-  C7.8,20,8.1,19.7,8.1,19.4z"/>
-</svg>
+              <path class="contacts-input__icon-path" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+              <path class="contacts-input__icon-path"
+                d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+              c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+              C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+              C7.8,20,8.1,19.7,8.1,19.4z"/>
+            </svg>
           </div>
-        <!--</div>-->
+        </div>
     </fieldset>
 </div>
 
@@ -170,52 +171,63 @@
         <legend class="form-aria__legend form-legend legend-line legend-line--aria">
           Комментарий
         </legend>
-        <textarea class="form-aria__text" name="about-form" cols="30" rows="5"
+
+        <div class="form-wrapper">
+          <textarea class="form-aria__text" name="about-form" cols="30" rows="5"
                     placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
     </div>
 
     <div class="container">
       <fieldset class="form-order__additional additional-form">
+
         <legend class="additional-form__legend form-legend legend-line legend-line--additional">
           Дополнительно
         </legend>
-        <div class="checkbox-wrapper">
-          <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="sugar-substitute"
-            id="sugar-substitute" checked>
-          <label class="additional-form__label form-label" for="sugar-substitute">Сахарозаменитель</label>
-        </div>
+        <div class="form-wrapper">
+          <div class="additional-form__wrapper">
+            <div class="checkbox-wrapper">
+              <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="sugar-substitute"
+                id="sugar-substitute" checked>
+              <label class="additional-form__label form-label" for="sugar-substitute">Сахарозаменитель</label>
+            </div>
 
-        <div class="checkbox-wrapper">
-          <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="drinking water" id="water">
-          <label class="additional-form__label form-label" for="water">Питьевая вода</label>
-        </div>
+            <div class="checkbox-wrapper">
+              <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="drinking water" id="water">
+              <label class="additional-form__label form-label" for="water">Питьевая вода</label>
+            </div>
 
-        <div class="checkbox-wrapper">
-          <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-          <label class="additional-form__label form-label" for="milk">Молоко</label>
-        </div>
+            <div class="checkbox-wrapper">
+              <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+              <label class="additional-form__label form-label" for="milk">Молоко</label>
+            </div>
 
-        <div class="checkbox-wrapper">
-          <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="vitamin" id="vitamin">
-          <label class="additional-form__label form-label" for="vitamin">Витамины</label>
+            <div class="checkbox-wrapper">
+              <input class="additional-form__checkbox form-checkbox visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+              <label class="additional-form__label form-label" for="vitamin">Витамины</label>
+            </div>
+          </div>
         </div>
       </fieldset>
     </div>
 
-    <div class="container">
-      <!--<div class="form-order__btn-wrapper">-->
-        <a class="form-order__link btn" href="order.html">
-          Отправить заявку
-        </a>
 
-        <span class="form-order__rule reception-rule">
-          <sup class="reception-rule__sup">
-            *
-          </sup>
-          &mdash; Обязательные поля
-        </span>
-      <!--</div>-->
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="form-order__link-wrapper">
+          <a class="form-order__link btn" href="order.html">
+            Отправить заявку
+          </a>
+
+          <span class="form-order__rule reception-rule">
+            <sup class="reception-rule__sup">
+              *
+            </sup>
+            &mdash; Обязательные поля
+          </span>
+        </div>
+      </div>
     </div>
   </form>
 </main>

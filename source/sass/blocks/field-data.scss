@@ -1,7 +1,14 @@
-.field-data {
-  //display: flex;
-  //flex-wrap: wrap;
-  margin-bottom: 7px;
+
+@media (min-width: $tablet-width) {
+  .field-data {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-data {
+    width: calc(50% - 40px);
+  }
 }
 
 //.field-data__label {

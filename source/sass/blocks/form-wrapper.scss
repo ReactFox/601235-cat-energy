@@ -6,14 +6,19 @@
 //  flex-direction: column;
 //}
 //
-//@media (min-width: $tablet-width) {
-//  .form-wrapper {
-//    width: $tablet-width;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  .form-wrapper {
-//    width: $desktop-width;
-//  }
-//}
+@media (min-width: $tablet-width) {
+  .form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 37px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

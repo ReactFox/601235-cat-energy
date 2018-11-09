@@ -4,16 +4,17 @@
   margin-bottom: 19px;
 }
 
-//@media (min-width: $tablet-width) {
-//  .checkbox-wrapper {
-//    width: 284px;
-//    margin-right: 30px;
-//    margin-left: 30px;
-//    padding-right: 0;
-//    padding-left: 0;
-//  }
-//}
-//
+@media (min-width: $tablet-width) {
+  .checkbox-wrapper {
+    width: calc(50% - 30px);
+    margin-bottom: 48px;
+    //margin-right: 30px;
+    //margin-left: 30px;
+    //padding-right: 0;
+    //padding-left: 0;
+  }
+}
+
 //@media (min-width: $tablet-width) {
 //  .checkbox-wrapper {
 //    width: 245px;

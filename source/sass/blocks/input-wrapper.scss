@@ -11,17 +11,25 @@
 }
 
 @media (min-width: $tablet-width) {
-  .input-wrapper--padding-size {
-    padding-right: 30px;
-    padding-left: 40px;
+  .input-wrapper {
+    width: 100%;
+    margin-bottom: 19px;
   }
+
+
+
+  //.input-wrapper--padding-size {
+    //padding-right: 30px;
+    //padding-left: 40px;
+  //}
 }
 
-//@media (min-width: $desktop-width) {
-//  .input-wrapper {
-//    width: 570px;
-//  }
-
+@media (min-width: $desktop-width) {
+  .input-wrapper:last-child {
+    //width: 570px;
+    margin-bottom: 0;
+  }
+}
 //  .input-wrapper--padding-size {
 //    padding-right: 40px;
 //    padding-left: 40px;

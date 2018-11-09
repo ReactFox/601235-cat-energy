@@ -1,17 +1,16 @@
 .main-form__title {
   margin-top: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-form__title {
+    margin-top: 57px;
+    margin-bottom: 31px;
+  }
+}
 //
-//@media (min-width: $tablet-width) {
-//  .main-form__title {
-//    padding-right: 30px;
-//    padding-left: 30px;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  .main-form__title {
-//    padding-right: 40px;
-//    padding-left: 40px;
-//  }
-//}
+@media (min-width: $desktop-width) {
+  .main-form__title {
+    margin-top: 74px;
+  }
+}

@@ -8,10 +8,11 @@
 //}
 
 .radio-data {
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 25px
+
   //padding-left: 39px;
   //margin-top: 12px;
   //margin-bottom: 5px;
@@ -20,12 +21,9 @@
 .radio-data__wrapper {
   width: 100%;
   display: flex;
-  //margin-top: 9.5px;
-  //margin-bottom: 9.5px;
+  margin-bottom: 26px;
 
-  flex-direction: column;
-  padding-top: 13.5px;
-  padding-bottom: 9.5px;
+  //flex-direction: column;
 }
 
 .radio-data__label {
@@ -42,6 +40,7 @@
   position: absolute;
   top: -4px;
   left: 18px;
+  padding: 8px;
   display: block;
 }
 
@@ -51,12 +50,52 @@
   //left: 0;
   width: 30px;
   height: 30px;
-  padding: 8px;
+  //padding: 8px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio-data__radio:checked + .radio-data__label::before {
   background-color: #68b738;
   background-clip: content-box;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-data {
+    width: 100%;
+    padding-top: 33px;
+  }
+
+  .radio-data__wrapper {
+    margin-bottom: 32px;
+  }
+
+  .radio-data__label {
+    padding-left: 86px;
+  }
+
+  .radio-data__label::before {
+    top: -10px;
+    left: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-data {
+    width: calc(50% - 40px);
+    margin-left: 40px;
+  }
+
+  .radio-data__wrapper {
+    margin-bottom: 0;
+  }
+
+  .radio-data__label::before {
+    padding: 10px;
+  }
 }
