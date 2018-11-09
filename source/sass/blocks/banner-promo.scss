@@ -66,10 +66,11 @@
 }
 
 .banner-promo__link {
-  text-align: center;
+  width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
-  width: 100%;
+  margin-bottom: 22px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
