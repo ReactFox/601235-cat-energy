@@ -58,14 +58,17 @@
     padding-right: 37px;
     //padding-bottom: 27px;
     padding-left: 37px;
-    border: none;
-    //border: 1px solid black;
-    outline: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-bottom: none;
+    //outline: 1px solid #cdcdcd;
     //margin-top: -1px;
-    margin-top: 2px;
+    //margin-top: 2px;
   }
 
-  //TODO сделать нормальные границы.
+  .cards-additional:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 
   .cards-additional__title {
     margin: 0;
@@ -77,13 +80,18 @@
 
   .cards-additional__description {
     padding-bottom: 0;
-    width: 128px;
+    width: 133px;
     display: flex;
     justify-content: flex-end;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .cards-additional__price {
-    width: 97px;
+    width: 92px;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .cards-additional__link {
@@ -99,6 +107,8 @@
     padding-bottom: 16px;
     padding-left: 0;
     align-items: center;
+    border-right: none;
+    border-left: none;
   }
 
   .cards-additional__title {
@@ -108,23 +118,24 @@
 
   .cards-additional__description {
     width: 245px;
-    margin-left: 40px;
+    margin-top: 6px;
+    margin-left: 38px;
     justify-content: flex-start;
   }
 
   .cards-additional__price {
     width: 80px;
     justify-content: flex-start;
+    margin-top: 6px;
+    margin-left: 0;
   }
 
   .cards-additional__link {
     width: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     padding-top: 11px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
   }
-  //.additional-goods__link {
-  //  width: 200px;
-  //  margin-bottom: 0;
-  //}
 }

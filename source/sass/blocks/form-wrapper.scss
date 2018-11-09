@@ -1,19 +1,25 @@
-.form-wrapper {
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
+//.form-wrapper {
+//  width: 320px;
+//  margin: 0 auto;
+//  display: flex;
+//  flex-wrap: wrap;
+//  flex-direction: column;
+//}
+//
 @media (min-width: $tablet-width) {
   .form-wrapper {
-    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 37px;
+    padding-left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-wrapper {
-    width: $desktop-width;
+    //width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

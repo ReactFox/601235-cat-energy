@@ -16,6 +16,18 @@
   display: flex;
 }
 
+.cards__img {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .cards__description-wrapper {
   width: 50%;
   flex-shrink: 0;

@@ -1,6 +1,18 @@
-//.field-data {
-//  display: flex;
-//  flex-wrap: wrap;
+
+@media (min-width: $tablet-width) {
+  .field-data {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-data {
+    width: calc(50% - 40px);
+  }
+}
+
+//.field-data__label {
+//  margin-right: 14.5px;
 //}
 //
 //.field-data__input {

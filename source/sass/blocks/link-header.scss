@@ -1,0 +1,10 @@
+.link-header:hover,
+.link-header:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.link-header:active {
+  opacity: 0.6;
+  outline: none;
+}

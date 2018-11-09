@@ -12,6 +12,10 @@
   background-color: $green-color;
 }
 
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .btn {
     display: inline-block;
@@ -27,8 +31,8 @@
   .btn:focus {
     background-color: #5eaa2f;
   }
-
-  .btn:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
+//
+//@media (min-width: $desktop-width) {
+//
+//}

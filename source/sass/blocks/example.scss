@@ -1,4 +1,6 @@
 .example {
+  //width: 320px;
+  //margin: 0 auto;
   background-color: $lightgrey-color;
 }
 
@@ -37,10 +39,21 @@
   margin-right: -20px;
   margin-left: -20px;
 }
-//.example__picture {
-//  margin-right: -20px;
-//  margin-left: -20px;
-//}
+
+.example__img {
+  width: 320px;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 516px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 516px;
+  }
+}
 
 .example__btn-wrapper {
   width: 100%;
@@ -87,7 +100,12 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    //width: $tablet-width;
     background-image: linear-gradient(to bottom, #ffffff 57.2%, #f2f2f2 57.2%);
+  }
+
+  .example__row-container {
+    width: 100%;
   }
 
   .example__description-container {
@@ -195,8 +213,9 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    //width: 100%;
     margin-top: 22px;
-    //todo возможно переделать градиенты
+    background-image: linear-gradient(to bottom, #ffffff 29.5%, #f2f2f2 29.5%);
   }
 
   .example__row-container {
@@ -211,7 +230,7 @@
     flex-direction: column;
     width: 50%;
     padding-top: 55px;
-    margin-right: 40px;
+    //margin-right: 40px;
     margin-left: 40px;
     padding-bottom: 0;
   }
@@ -227,12 +246,6 @@
   .example__description {
     width: 490px;
     margin-bottom: 69px;
-    //margin-top: 6px;
-
-
-    //margin-top: 22px;
-    //margin-bottom: 30px;
-
     padding-right: 53px;
   }
 
@@ -256,7 +269,7 @@
 
   .example__btn-wrapper {
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .example__range-border {
@@ -272,21 +285,13 @@
   }
 
   .example__picture-wrapper {
-    width: 50%;
-
-    margin-right: 40px;
     margin-left: 40px;
-  }
-
-  .example__picture {
-    //position: relative;
   }
 
   .example__img {
     position: relative;
     top: -22px;
     left: 0;
-    //transform: translate(0, -23px);
     max-width: 690px;
     display: block;
   }

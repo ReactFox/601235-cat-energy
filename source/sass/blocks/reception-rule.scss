@@ -1,15 +1,38 @@
 .reception-rule {
   @include font-regular;
   color: $text-color;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.reception-rule__sup {
+  @include font-regular;
+  display: inline-block;
+  vertical-align: middle;
+  color: $text-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
 }
 
-.reception-rule__sup {
-  @include font-regular;
-  color: $text-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
+@media (min-width: $tablet-width) {
+  .reception-rule {
+    width: 283px;
+    text-align: left;
+    //padding-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .reception-rule__sup {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
