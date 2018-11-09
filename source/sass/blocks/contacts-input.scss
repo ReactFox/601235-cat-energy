@@ -97,6 +97,23 @@
     top: 0;
   }
 
+  .contacts-input__container {
+    //width: calc(50% - 50px);
+    width: 570px;
+    //margin-left: 40px;
+  }
+
+  .contacts-input__container:nth-child(2n + 1) {
+    margin-right: 40px;
+  }
+
+  .contacts-input__container:nth-child(2n) {
+
+    margin-left: 40px;
+  }
+
+  //.contacts-input__container
+
   //.contacts-input__wrapper {
   //  display: flex;
   //  flex-direction: row;
