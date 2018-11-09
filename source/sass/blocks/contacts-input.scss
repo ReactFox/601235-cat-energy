@@ -29,17 +29,18 @@
   //right: 13px;
   display: block;
 
-  &--mobile {
-    width: 20px;
-    //top: 14px;
-    right: 13px;
-  }
-
   &--mail {
     width: 17px;
     height: 17px;
-    //top: 14px;
+    top: 14px;
     right: 16px;
+  }
+
+  &--mobile {
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    right: 13px;
   }
 }
 
