@@ -217,18 +217,6 @@
               <p class="stats__value">60 дней</p>
               <p class="stats__field stats__field--width-2">затрачено времени</p>
             </div>
-            <!--<tbody class="stats__body">-->
-            <!--<tr class="stats__cell">-->
-            <!--<td class="stats__value">5 кг</td>-->
-            <!--<td class="stats__field">снижение веса</td>-->
-            <!--</tr>-->
-            <!-- todo флексы в IE11 не работают в таблице свойство column
-            убрал табличные теги чтобы работал флекс!-->
-            <!--<tr class="stats__cell">-->
-            <!--<td class="stats__value">60 дней</td>-->
-            <!--<td class="stats__field">затрачено времени</td>-->
-            <!--</tr>-->
-            <!--</tbody>-->
           </div>
           <p class="example__total">
             Затраты на питание: <span class="example__span">15 000 руб.</span>
@@ -261,16 +249,18 @@
 </main>
 
 <footer class="page-footer">
-  <div class="container">
-    <div class="contacts">
-      <p class="contacts__cooperation">Приглашаем
-        к сотрудничеству дилеров!</p>
-      <p class="contacts__address">
-        ул. Большая Коннюшеная, д. 19/8
-        <span class="contacts__address-city">
-            Санкт-Петербург
-          </span>
-      </p>
+  <div class="contacts page-footer__contacts">
+    <div class="container">
+      <div class="contacts__container">
+        <p class="contacts__cooperation">Приглашаем
+          к сотрудничеству дилеров!</p>
+        <p class="contacts__address">
+          ул. Большая Коннюшеная, д. 19/8
+          <span class="contacts__address-city">
+              Санкт-Петербург
+            </span>
+        </p>
+      </div>
     </div>
   </div>
   <a class="page-footer__map map container" href="#" aria-label="Карта">
@@ -280,6 +270,7 @@
       <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта" width="320" height="400">
     </picture>
   </a>
+  <iframe class="page-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3031483527288!2d30.32266652595665!3d59.93867484420698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541791035469" frameborder="0" allowfullscreen></iframe>
 
   <div class="footer-bottom">
     <div class="container">

@@ -1,6 +1,6 @@
 .example {
-  width: 320px;
-  margin: 0 auto;
+  //width: 320px;
+  //margin: 0 auto;
   background-color: $lightgrey-color;
 }
 
@@ -100,7 +100,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    width: $tablet-width;
+    //width: $tablet-width;
     background-image: linear-gradient(to bottom, #ffffff 57.2%, #f2f2f2 57.2%);
   }
 
@@ -213,7 +213,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: 100%;
+    //width: 100%;
     margin-top: 22px;
     background-image: linear-gradient(to bottom, #ffffff 29.5%, #f2f2f2 29.5%);
   }

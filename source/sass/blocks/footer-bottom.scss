@@ -1,6 +1,6 @@
 .footer-bottom {
-  width: 320px;
-  margin: 0 auto;
+  //width: 320px;
+  //margin: 0 auto;
   background-color: $lightgrey-color;
 }
 
@@ -11,7 +11,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-bottom {
-    width: $tablet-width;
+    width: 100%;
     padding-top: 56px;
     padding-bottom: 57px;
   }
