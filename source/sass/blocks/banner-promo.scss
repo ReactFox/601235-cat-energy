@@ -6,6 +6,12 @@
   margin-bottom: 22px;
   position: relative;
 
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+
   &::after {
     content: "";
     background-color: #65a93c;
@@ -15,13 +21,17 @@
     top: 1px;
     margin: auto;
     width: 100%;
+    background-size: 320px 305px;
     background-position: center center;
     height: 305px;
     z-index: -1;
   }
-}
-// todo добавить последнему пункту меню нижний бордер и удалить top: 1px; (он для компенсации)
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px 305px;
+  }
+}
 
 .banner-promo__title {
   @include reset-indentation;
@@ -154,7 +164,12 @@
       height: 696px;
       display: block;
       width: 50%;
-      //z-index: -31;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: 720px 696px;
     }
   }
 
