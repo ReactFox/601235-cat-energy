@@ -9,6 +9,7 @@ var server = require("browser-sync").create();
 var svgSprite = require("gulp-svg-sprites");
 var rename = require("gulp-rename");
 var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -38,6 +39,16 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3})
+    ]))
+
+
+    .pipe(gulp.dest("source/img"))
+});
 
 gulp.task('sprites', function () {
   return gulp.src('./source/img/*.svg')
