@@ -191,7 +191,16 @@
     padding-bottom: 5px;
     font-size: 20px;
     line-height: 20px;
-    border-bottom: 1px dotted #bebebe;
+    border-bottom: 1px dotted #989898;
+  }
+
+  .example__btn:hover,
+  .example__btn:focus {
+    border-bottom: 1px solid #989898;
+  }
+
+  .example__btn:active {
+    border-bottom: 1px solid transparent;
   }
 
   .example__range-border {
