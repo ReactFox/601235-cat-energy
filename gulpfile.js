@@ -7,6 +7,9 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var svgSprite = require("gulp-svg-sprites");
+var rename = require("gulp-rename");
+var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -16,7 +19,10 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("source/css"))
+    .pipe(server.stream())
 });
 
 gulp.task("server", function () {
@@ -33,6 +39,16 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3})
+    ]))
+
+
+    .pipe(gulp.dest("source/img"))
+});
 
 gulp.task('sprites', function () {
   return gulp.src('./source/img/*.svg')

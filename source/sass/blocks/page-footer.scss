@@ -13,14 +13,26 @@
 
 .page-footer__map {
   position: absolute;
-  top: 0;
+  top: 118px;
+  // Топ для того что-бы при отключенной карте отображлся блок контакты и карта под него не падала
   z-index: -1;
+  //времено скрываем для стилизации иконки
+  //z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 203px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .page-footer__map-iframe {
   //position: absolute;
   //top: 0;
   //left: 0;
+  border: none;
   width: 100%;
   height: 355px;
 
@@ -38,11 +50,11 @@
     position: relative;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .page-footer__map-iframe {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-  }
-}
+//
+//@media (min-width: $desktop-width) {
+//  .page-footer__map-iframe {
+//    //position: absolute;
+//    //top: 0;
+//    //left: 0;
+//  }
+//}

@@ -7,6 +7,20 @@
 .map__picture {
   margin: 0 auto;
   width: 320px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    top: 139px;
+    height: 53px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .map__image {
@@ -26,6 +40,12 @@
     //margin-right: -40px;
     margin: 0 auto;
     width: $tablet-width;
+  }
+
+  .map__picture::after {
+    top: 144px;
+    width: 113px;
+    height: 106px;
   }
 
   .map__image {
@@ -52,5 +72,11 @@
   .map__image {
     width: 100%;
     min-height: 400px;
+  }
+
+  .map__picture::after {
+    top: 151px;
+    right: 203px;
+    left: auto;
   }
 }

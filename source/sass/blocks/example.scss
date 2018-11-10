@@ -34,7 +34,6 @@
   text-transform: uppercase;
 }
 
-
 .example__picture-wrapper {
   margin-right: -20px;
   margin-left: -20px;
@@ -45,13 +44,48 @@
   height: 240px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 690px;
     height: 516px;
+    top: 0;
+    left: 17px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 0;
+    left: -39px;
+    width: 677px;
+    max-width: 677px;
+    height: 522px;
+  }
+}
+
+.example__picture {
+  //display: none;
+}
+
+.example__picture-slim {
+  display: none;
+}
+
+.example__img-slim {
+  width: 320px;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
     width: 690px;
     height: 516px;
+    position: relative;
+    left: 16px;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 3px;
+    left: -24px;
+    width: 100%;
+    display: block;
   }
 }
 
@@ -139,14 +173,7 @@
 
   .example__picture-wrapper {
     margin: 0 auto;
-    //padding-left: 13px;
     padding-bottom: 34px;
-  }
-
-  .example__picture {
-    margin-bottom: 11px;
-    margin-left: 0;
-    padding-left: 13px;
   }
 
   .example__btn-wrapper {
@@ -157,7 +184,16 @@
     padding-bottom: 5px;
     font-size: 20px;
     line-height: 20px;
-    border-bottom: 1px dotted #bebebe;
+    border-bottom: 1px dotted #989898;
+  }
+
+  .example__btn:hover,
+  .example__btn:focus {
+    border-bottom: 1px solid #989898;
+  }
+
+  .example__btn:active {
+    border-bottom: 1px solid transparent;
   }
 
   .example__range-border {
@@ -228,8 +264,8 @@
 
   .example__description-container {
     flex-direction: column;
-    width: 50%;
-    padding-top: 55px;
+    width: 650px;
+    padding-top: 46px;
     //margin-right: 40px;
     margin-left: 40px;
     padding-bottom: 0;
@@ -238,7 +274,7 @@
   .example__title {
     padding-top: 0;
     padding-bottom: 0;
-    margin-top: 0;
+    margin-top: 9px;
     margin-bottom: 146px;
     flex-shrink: 0;
   }
@@ -269,7 +305,9 @@
 
   .example__btn-wrapper {
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 0;
+    margin-top: 10.8px;
+    padding-top: 19px;
   }
 
   .example__range-border {
@@ -285,14 +323,7 @@
   }
 
   .example__picture-wrapper {
-    margin-left: 40px;
-  }
-
-  .example__img {
-    position: relative;
-    top: -22px;
-    left: 0;
-    max-width: 690px;
-    display: block;
+    width: 650px;
+    //margin-left: 40px;
   }
 }
