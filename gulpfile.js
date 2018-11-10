@@ -42,6 +42,7 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("build", gulp.series("css", "sprite", "html"));
 gulp.task("start", gulp.series("css", "server"));
 
 //Оптимизирует файлы картинок
@@ -75,7 +76,7 @@ gulp.task ("sprite", function () {
 })
 
 //Пост HTML
-gulp.task ("posthtml", function () {
+gulp.task ("html", function () {
   return gulp.src("source/*html")
     .pipe(posthtml([
       include()
