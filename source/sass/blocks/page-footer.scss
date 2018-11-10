@@ -13,8 +13,19 @@
 
 .page-footer__map {
   position: absolute;
-  top: 0;
+  top: 118px;
+  // Топ для того что-бы при отключенной карте отображлся блок контакты и карта под него не падала
   z-index: -1;
+  //времено скрываем для стилизации иконки
+  //z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 203px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .page-footer__map-iframe {
