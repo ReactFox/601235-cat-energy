@@ -10,6 +10,10 @@ var svgSprite = require("gulp-svg-sprites");
 var rename = require("gulp-rename");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -40,16 +44,66 @@ gulp.task("server", function () {
 
 gulp.task("start", gulp.series("css", "server"));
 
+//Оптимизирует файлы картинок
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3})
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
     ]))
-
 
     .pipe(gulp.dest("source/img"))
 });
 
+//Ковертирует в webp
+gulp.task ("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+})
+
+//Cобирает svg-Спрайт
+gulp.task ("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSVG: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+})
+
+//Пост HTML
+gulp.task ("posthtml", function () {
+  return gulp.src("source/*html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("source"));
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//для создания спрайтов SVG
 gulp.task('sprites', function () {
   return gulp.src('./source/img/*.svg')
     .pipe(svgSprite({
@@ -58,3 +112,4 @@ gulp.task('sprites', function () {
     }))
     .pipe(gulp.dest("./source/img/"));
 });
+
