@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0px;
+    top: 0;
     left: -39px;
     width: 677px;
     max-width: 677px;
@@ -173,15 +173,8 @@
 
   .example__picture-wrapper {
     margin: 0 auto;
-    //padding-left: 13px;
     padding-bottom: 34px;
   }
-
-  //.example__picture {
-    //margin-bottom: 11px;
-    //margin-left: 0;
-    //padding-left: 13px;
-  //}
 
   .example__btn-wrapper {
     margin-top: 15.8px;
