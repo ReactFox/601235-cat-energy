@@ -210,7 +210,6 @@
   }
 
   .example__range-switch {
-    //display: none;
     display: block;
     position: absolute;
     width: 34px;
@@ -251,7 +250,6 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    //width: 100%;
     margin-top: 22px;
     background-image: linear-gradient(to bottom, #ffffff 29.5%, #f2f2f2 29.5%);
   }
@@ -259,7 +257,6 @@
   .example__row-container {
     width: 1300px;
     display: flex;
-    //flex-wrap: wrap;
     margin-right: -40px;
     margin-left: -40px;
   }
@@ -268,7 +265,6 @@
     flex-direction: column;
     width: 650px;
     padding-top: 46px;
-    //margin-right: 40px;
     margin-left: 40px;
     padding-bottom: 0;
   }
@@ -326,6 +322,5 @@
 
   .example__picture-wrapper {
     width: 650px;
-    //margin-left: 40px;
   }
 }

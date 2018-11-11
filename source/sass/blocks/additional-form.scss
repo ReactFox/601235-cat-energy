@@ -27,31 +27,19 @@
   display: block;
 }
 
-
-//
-//.radio-data__label::before {
-//  content: "";
-//  position: absolute;
-//  top: -4px;
-//  left: 18px;
-//  display: block;
-//}
-
 .additional-form__checkbox + .additional-form__label::before {
   content: "";
   position: absolute;
   display: block;
   top: -3px;
   left: 0;
-  //width: 30px;
-  //height: 30px;
   padding: 6px 3px 6px 4px;
   border: 1px solid #cdcdcd;
 }
 
 
 .additional-form__checkbox:checked + .additional-form__label::before {
-  background: url("../../img/icon-tick.svg") no-repeat center;
+  background: url("../img/icon-tick.svg") no-repeat center;
   background-size: 21px auto;
   background-clip: content-box;
 }

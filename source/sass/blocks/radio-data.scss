@@ -1,29 +1,15 @@
-//.radio-data {
-//  display: flex;
-//  flex-direction: column;
-//  width: 320px;
-//  padding-right: 20px;
-//  padding-left: 20px;
-//  border: 1px solid #b6b6b6;
-//}
 
 .radio-data {
   width: 320px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 25px
-
-  //padding-left: 39px;
-  //margin-top: 12px;
-  //margin-bottom: 5px;
 }
 
 .radio-data__wrapper {
   width: 100%;
   display: flex;
   margin-bottom: 26px;
-
-  //flex-direction: column;
 }
 
 .radio-data__label {
@@ -46,11 +32,8 @@
 
 .radio-data__radio + .radio-data__label::before {
   display: block;
-  //top: 6px;
-  //left: 0;
   width: 30px;
   height: 30px;
-  //padding: 8px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 

@@ -1,7 +1,6 @@
 
 
 .basic-goods__list {
-  //@include reset-indentation;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -17,10 +16,6 @@
   padding-bottom: 23px;
   padding-left: 20px;
   border: 1px solid #ededed;
-  //margin-top: -1px;
-  //margin-bottom: -1px;
-  //outline: 1px solid #ededed;
-  //box-shadow: 0 0 0 1px #ededed;
   border-top: 1px solid #ededed;
   border-right: 1px solid #ededed;
   border-left: 1px solid #ededed;
@@ -36,9 +31,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    //margin-right: -30px;
-    //margin-left: -30px;
-    //border: none;
   }
 
   .basic-goods__item {
@@ -63,19 +55,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  //.basic-goods {
-  //  width: $desktop-width;
-  //
-  //}
 
   .basic-goods__list {
     width: $desktop-width;
-    //margin-right: -40px;
-    //margin-left: -40px;
   }
 
   .basic-goods__item {
-    //width: 245px;
     width: calc(25% - 80px);
     margin-right: 40px;
     margin-left: 40px;

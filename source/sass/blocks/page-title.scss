@@ -1,5 +1,4 @@
 .page-title {
-  //@include reset-indentation;
   @include oswald-regular;
   color: $title-color;
   font-size: 36px;
@@ -16,7 +15,5 @@
   .page-title {
     font-size: 60px;
     line-height: 60px;
-    //padding-right: 30px;
-    //padding-left: 30px;
   }
 }

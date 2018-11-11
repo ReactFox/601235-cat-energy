@@ -46,7 +46,6 @@
 }
 
 .banner-promo__link {
-  //width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
   margin-bottom: 22px;
@@ -95,6 +94,7 @@
   }
 
   .banner-promo__img {
+    width: 708px;
     position: absolute;
     top: 31.203%;
     left: 50%;
@@ -161,6 +161,7 @@
   }
 
   .banner-promo__img {
+    width: 552px;
     top: 0;
     z-index: 0;
     transform: translate(-29%, 27.9%);

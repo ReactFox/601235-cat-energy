@@ -10,14 +10,9 @@
 
   &::before {
     content: "";
-    //position: relative;
-    //left: 1px;
     width: 50px;
     height: 50px;
     background-color: $green-color;
-    //background-image: url("../../img/icon-cat-slim.svg");
-    //background-repeat: no-repeat;
-    //background-size: 120%;
     border-radius: 55%;
     margin-right: 20px;
     display: block;
@@ -26,11 +21,8 @@
   &::after {
     content: "";
     position: absolute;
-
     background-repeat: no-repeat;
     background-size: 100%;
-    //border-radius: 50%;
-    //margin-right: 20px;
     display: block;
   }
 
@@ -39,7 +31,7 @@
     left: 30px;
     width: 35px;
     height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   &--icon-2::after {
@@ -47,7 +39,7 @@
     left: 13px;
     width: 67px;
     height: 28px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -94,8 +86,7 @@
   right: 0;
   top: 23px;
   height: 11px;
-  //margin-left: 5px;
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-size: 32px 11px;
   background-position: right center;
@@ -105,7 +96,7 @@
 .program-cards__link:hover::after,
 .program-cards__link:focus::after {
   width: 33px;
-  background-image: url("../../img/icon-right-arrow-verylong.svg");
+  background-image: url("../img/icon-right-arrow-verylong.svg");
   outline: none;
   top: 23px;
   right: -4px;
@@ -128,7 +119,6 @@
     &::before {
       width: 200px;
       height: 200px;
-      //order: 1;
       position: absolute;
       top: 24.7%;
       right: 6%;
@@ -183,14 +173,10 @@
   .program-cards__link--arrow-position:hover::after {
     right: 2px;
   }
-  //.program-cards__link::after {
-  //  //margin-right: 19px;
-  //}
 }
 
 @media (min-width: $desktop-width) {
   .program-cards {
-    //width: 50%;
     width: 570px;
     padding-top: 47px;
     padding-right: 52px;
