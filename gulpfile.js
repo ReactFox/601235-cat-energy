@@ -11,7 +11,6 @@ var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgSprite = require("gulp-svg-sprites");
-// var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -60,8 +59,6 @@ gulp.task("copy",function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/pixel-glass/**"
-  //  потом убрать
   ], {
     base: "source/"
   })
@@ -71,11 +68,11 @@ gulp.task("copy",function () {
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    // .pipe(imagemin([
-    //   imagemin.optipng({optimizationLevel: 3}),
-    //   imagemin.jpegtran({progressive: true}),
-    //   imagemin.svgo()
-    // ]))
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
 
     .pipe(gulp.dest("build/img"))
 });
@@ -83,8 +80,8 @@ gulp.task("images", function () {
 //Ковертирует в webp
 gulp.task ("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    // .pipe(webp({quality: 90}))
-    // .pipe(gulp.dest("build/img"));
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
@@ -96,16 +93,6 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("./source/img/"));
 });
 
-// Cобирает svg-Спрайт и не работает
-// gulp.task ("sprite", function () {
-//   return gulp.src("source/img/icon-*.svg")
-//     .pipe(svgstore({
-//       inlineSvg: true
-//     }))
-//     .pipe(rename("sprite.svg"))
-//     .pipe(gulp.dest("build/img"));
-// });
-
 //Пост HTML
 gulp.task ("html", function () {
   return gulp.src("source/*.html")
@@ -116,7 +103,6 @@ gulp.task ("html", function () {
     ]))
     .pipe(gulp.dest("build"));
 });
-
 
 gulp.task("build", gulp.series(
   "clean",
