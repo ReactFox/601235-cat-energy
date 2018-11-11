@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //margin-top: 57px;
   padding-top: 80px;
 }
 
@@ -21,7 +20,7 @@
   top: 26px;
   width: 30px;
   height: 30px;
-  background-image: url("../../img/icon-plus-mobile.svg");
+  background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
   display: block;
@@ -29,25 +28,20 @@
   left: 0;
   right: 0;
 
-  //todo отцентровать в IE
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/icon-plus.svg");
+    background-image: url("../img/icon-plus.svg");
     width: 60px;
     height: 60px;
     top: 56px;
   }
 }
-//.other-goods__link {
-//
-//}
 
 .other-goods__title {
   @include reset-indentation;
   @include oswald-regular;
   margin-bottom: 8px;
   color: $title-color;
-  //margin-top: 82px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -136,7 +130,6 @@
   }
 
   .other-goods__link:active {
-    //background-color: #ebebeb;
     color: rgba(68, 68, 68, 0.3);
   }
 }

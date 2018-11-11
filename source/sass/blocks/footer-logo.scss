@@ -1,10 +1,9 @@
 .footer-logo {
-  //width: 129px;
-  //height: 41px;
   width: 100%;
-  padding-top: 42px;
+  padding-top: 46px;
   padding-bottom: 31px;
   border-bottom: 1px solid #dadada;
+  fill: #111111;
 }
 
 .footer-logo:hover,
@@ -27,7 +26,6 @@
 @media (min-width: $tablet-width) {
   .footer-logo {
     width: 129px;
-    //height: 41px;
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;

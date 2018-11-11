@@ -1,6 +1,4 @@
 .footer-bottom {
-  //width: 320px;
-  //margin: 0 auto;
   background-color: $lightgrey-color;
 }
 
@@ -12,8 +10,9 @@
 @media (min-width: $tablet-width) {
   .footer-bottom {
     width: 100%;
+    margin-top: -5px;
     padding-top: 56px;
-    padding-bottom: 57px;
+    padding-bottom: 54px;
   }
 
   .footer-bottom__wrapper {
@@ -33,7 +32,9 @@
 @media (min-width: $desktop-width) {
   .footer-bottom {
     width: 100%;
-    padding-top: 49px;
+    margin-top: -4px;
+    padding-top: 54px;
+    padding-bottom: 57px;
   }
 
   .footer-bottom__wrapper {

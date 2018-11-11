@@ -1,7 +1,6 @@
 .contacts-input {
   width: 100%;
   border: none;
-  //position: relative;
 }
 
 .contacts-input__legend {
@@ -24,10 +23,8 @@
 
 .contacts-input__icon {
   position: absolute;
-  //width: 20px;
-  top: 14px;
-  //right: 13px;
   display: block;
+  top: 14px;
 
   &--mail {
     width: 17px;
@@ -55,22 +52,12 @@
 .contacts-input__input:focus + .contacts-input__icon .contacts-input__icon-path {
   fill: $green-color;
 }
-//
-//.contacts-input__label {
-//  margin-right: 14.5px;
-//}
 
 @media (min-width: $tablet-width) {
   .contacts-input__legend {
     margin-top: 51px;
     margin-bottom: 76px;
   }
-
-  //.contacts-input__wrapper {
-  //  width: 100%;
-  //  padding-right: 35px;
-  //  padding-left: 40px;
-  //}
 
   .contacts-input__icon {
     top: 18px;
@@ -93,15 +80,13 @@
   .contacts-input__legend {
     position: relative;
     width: 593px;
-    margin-top: 42px;
+    margin-top: 0;
     left: -40px;
     top: 0;
   }
 
   .contacts-input__container {
-    //width: calc(50% - 50px);
     width: 570px;
-    //margin-left: 40px;
   }
 
   .contacts-input__container:nth-child(2n + 1) {
@@ -112,22 +97,4 @@
 
     margin-left: 40px;
   }
-
-  //.contacts-input__container
-
-  //.contacts-input__wrapper {
-  //  display: flex;
-  //  flex-direction: row;
-  //  flex-wrap: wrap;
-  //  padding-right: 40px;
-  //  padding-left: 40px;
-  //  margin-right: -40px;
-  //  margin-left: -40px;
-  //}
-  //
-  //.contacts-input__container {
-  //  width: 570px;
-  //  margin-right: 40px;
-  //  margin-left: 40px;
-  //}
 }
