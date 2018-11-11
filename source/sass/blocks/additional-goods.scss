@@ -40,11 +40,12 @@
   .additional-goods {
     margin-top: 9px;
     position: relative;
+    margin-top: -18px;
   }
 
   .additional-goods::before {
     content: "";
-    top: 23px;
+    top: 51px;
     width: 100%;
     height: 3px;
     background-color: $green-color;
@@ -78,6 +79,7 @@
 @media (min-width: $desktop-width) {
   .additional-goods {
     margin-bottom: 86px;
+    margin-top: 0;
   }
 
   .additional-goods::before {

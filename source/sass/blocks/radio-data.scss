@@ -72,10 +72,11 @@
   .radio-data {
     width: calc(50% - 40px);
     margin-left: 40px;
+    display: block;
   }
 
   .radio-data__wrapper {
-    margin-bottom: 0;
+    margin-bottom: 35px;
   }
 
   .radio-data__label::before {
