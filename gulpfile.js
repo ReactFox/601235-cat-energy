@@ -83,8 +83,8 @@ gulp.task("images", function () {
 //Ковертирует в webp
 gulp.task ("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+    // .pipe(webp({quality: 90}))
+    // .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
