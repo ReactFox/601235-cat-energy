@@ -16,6 +16,30 @@
   width: 100%;
 }
 
+.page-header__toggle {
+  display: none;
+}
+
+.page-header__toggle-wrapper {
+  display: none;
+  width: 43px;
+  height: 43px;
+  position: relative;
+}
+
+.page-header__toggle-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: -2px;
+  right: -9px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-size: 25px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .page-header__logo-image {
   width: 191px;
   height: 38px;
@@ -48,10 +72,6 @@
     width: 190px;
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .page-header__toggle {
-    display: none;
   }
 }
 
