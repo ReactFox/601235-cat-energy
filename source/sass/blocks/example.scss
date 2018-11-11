@@ -190,10 +190,12 @@
   .example__btn:hover,
   .example__btn:focus {
     border-bottom: 1px solid #989898;
+    cursor: pointer;
   }
 
   .example__btn:active {
     border-bottom: 1px solid transparent;
+    cursor: pointer;
   }
 
   .example__range-border {
