@@ -85,10 +85,7 @@
   }
 
   .cards__image-wrapper {
-    //height: 96px;
     width: 100%;
-
-    //todo min-height в ie рушит магию флекса
     height: 208px;
     align-items: flex-end;
   }
@@ -106,7 +103,6 @@
   }
 
   .cards__link {
-    //align-self: center;
     width: 248px;
     text-align: center;
     margin-left: 38px;
