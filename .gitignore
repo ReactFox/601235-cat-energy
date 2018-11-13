@@ -11,3 +11,4 @@ npm-debug.*
 Thumbs.db
 source/img/svg/
 build/
+img/pixel
