@@ -4,6 +4,7 @@
 }
 
 .contacts-input__legend {
+  margin-top: 0;
   margin-bottom: 34px;
 }
 
@@ -55,8 +56,10 @@
 
 @media (min-width: $tablet-width) {
   .contacts-input__legend {
-    margin-top: 51px;
+    //margin-top: 51px;
     margin-bottom: 76px;
+    margin-top: 0;
+    //это новый стиль
   }
 
   .contacts-input__icon {

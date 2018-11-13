@@ -31,13 +31,13 @@
 
 .form-order__contacts-data {
   @include reset-indentation;
-  margin-top: 26px;
+  margin-top: 31px;
   margin-bottom: 16px;
 }
 
 .form-order__aria {
   @include reset-indentation;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .form-order__additional {
@@ -72,7 +72,9 @@
   }
 
   .form-order__contacts-data {
-    margin-bottom: 45px;
+    //margin-bottom: 45px;
+    margin-top: 78px; // новое
+    margin-bottom: 44px; //новое
   }
 
   .form-order__main {
@@ -120,8 +122,12 @@
   }
 
   .form-order__contacts-data {
-    margin-top: 24px;
-    padding-top: 38px;
+    //margin-top: 24px;
+    //padding-top: 38px;
+    margin-top: 68px;
+    //padding-top: 69px; новое
+    //margin-bottom: 0; новое
+    margin-bottom: 46px;
   }
 
   .form-order__main {
