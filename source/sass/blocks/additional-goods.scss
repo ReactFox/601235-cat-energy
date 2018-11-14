@@ -3,6 +3,7 @@
 }
 
 .additional-goods__title {
+  margin-top: 0;
   margin-bottom: 34px;
   font-size: 24px;
   font-weight: 400;
@@ -44,7 +45,7 @@
 
   .additional-goods::before {
     content: "";
-    top: 51px;
+    top: 24px;
     width: 100%;
     height: 3px;
     background-color: $green-color;
@@ -54,11 +55,11 @@
 
   .additional-goods__title {
     width: auto;
+    display: inline-block;
+    margin-bottom: 81px;
     padding-left: 37px;
     padding-right: 37px;
     background-color: $white-color;
-    display: inline-block;
-    margin-bottom: 81px;
 
     color: $title-color;
     font-size: 36px;
@@ -77,12 +78,12 @@
 
 @media (min-width: $desktop-width) {
   .additional-goods {
-    margin-bottom: 86px;
     margin-top: 0;
+    margin-bottom: 86px;
   }
 
   .additional-goods::before {
-    top: 29px;
+    top: 38px;
   }
 
   .additional-goods__list {
@@ -97,7 +98,7 @@
   }
 
   .additional-goods__title {
-    margin-top: 6px;
+    margin-top: 15px;
     padding-left: 40px;
     transform: translateX(-40px);
   }
