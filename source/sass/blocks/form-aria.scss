@@ -4,6 +4,7 @@
 
 .form-aria__text {
   @include oswald-regular;
+  display: block;
   width: 280px;
   min-height: 150px;
   margin: 0 auto;
