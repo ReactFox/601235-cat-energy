@@ -1,6 +1,10 @@
+.form-wrapper {
+  width: 100%;
+}
 
 @media (min-width: $tablet-width) {
   .form-wrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

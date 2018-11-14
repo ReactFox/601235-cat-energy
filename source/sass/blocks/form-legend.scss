@@ -1,27 +1,26 @@
 .form-legend {
-  width: 203px;
-  padding-right: 18px;
+  width: 100%;
+  //width: 203px;
+  //padding-right: 18px; сегодня
+  padding-right: 0;
   padding-left: 0;
-  color: $title-color;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  background-color: $white-color;
+  background-color: transparent;
 }
 
-@media (min-width: $tablet-width) {
-  .form-legend {
-    width: 593px;
-    padding-right: 38px;
-    font-size: 36px;
-    line-height: 36px;
-    padding-left: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-legend {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
+//
+//@media (min-width: $tablet-width) {
+//  .form-legend {
+//    width: 593px;
+//    //padding-right: 38px; сегодня
+//    //padding-left: 40px; сегодня
+//    font-size: 36px;
+//    line-height: 36px;
+//  }
+//}
+//
+//@media (min-width: $desktop-width) {
+//  .form-legend {
+//    //padding-right: 40px; сегодня
+//    //padding-left: 40px; сегодня
+//  }
+//}

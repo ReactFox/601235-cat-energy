@@ -4,8 +4,9 @@
 }
 
 .contacts-input__legend {
+  //width: 100%; сегодня
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .contacts-input__wrapper {
@@ -81,11 +82,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts-input__legend {
-    position: relative;
-    width: 593px;
+    //position: relative;
+    //width: 593px; сегодня
     margin-top: 0;
-    left: -40px;
-    top: 0;
+    //left: -40px;
+    //top: 0;
   }
 
   .contacts-input__container {

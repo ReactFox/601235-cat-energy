@@ -71,7 +71,7 @@
           </div>
           <div class="input-wrapper">
             <label class="field-data__label form-label form-label--age-margin" for="age">Возраст (Лет):</label>
-            <input class="field-data__input form-input" id="age" type="text" placeholder="7">
+            <input class="field-data__input form-input form-input--ege-width " id="age" type="text" placeholder="7">
           </div>
         </div>
       </fieldset>
@@ -90,42 +90,51 @@
         </div>
       </fieldset>
     </div>
-    <div class="container">
+
+    <!--TODO исправление горизонтального скрола-->
+
+    <!--<div class="container">-->
       <fieldset class="form-order__contacts-data contacts-input">
         <legend class="contacts-input__legend form-legend legend-line legend-line--contacts">
-          Контактные данные
-          (владельца кота)
+          <span class="container"><span class="legend-title legend-title--width-contacts">Контактные данные
+            (владельца кота)</span></span>
         </legend>
-        <div class="form-wrapper">
-          <div class="contacts-input__container">
-            <label class="contacts-input__label form-label form-label--email-margin" for="email">E-mail:<sup
-              class="data-sup">*</sup></label>
-            <input class="contacts-input__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
-            <svg class="contacts-input__icon contacts-input__icon--mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
-              <path class="contacts-input__icon-path" d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
-            </svg>
-          </div>
+        <div class="container">
+          <div class="form-wrapper">
+            <div class="contacts-input__container">
+              <label class="contacts-input__label form-label form-label--email-margin" for="email">E-mail:<sup
+                class="data-sup">*</sup></label>
+              <input class="contacts-input__input form-input" id="email" type="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="contacts-input__icon contacts-input__icon--mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                <path class="contacts-input__icon-path" d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+              </svg>
+            </div>
 
-          <div class="contacts-input__container">
-            <label class="contacts-input__label form-label form-label--tel-margin" for="tel">Телефон:<sup
-              class="data-sup">*</sup></label>
-            <input class="contacts-input__input form-input" id="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Ввидите не менее 7 цифр" placeholder="8 (960) 900-60-90" required>
-            <svg class="contacts-input__icon contacts-input__icon--mobile" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-              <path class="contacts-input__icon-path" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-              <path class="contacts-input__icon-path"
-                d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-              c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-              C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-              C7.8,20,8.1,19.7,8.1,19.4z"/>
-            </svg>
+            <div class="contacts-input__container">
+              <label class="contacts-input__label form-label form-label--tel-margin" for="tel">Телефон:<sup
+                class="data-sup">*</sup></label>
+              <input class="contacts-input__input form-input" id="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Ввидите не менее 7 цифр" placeholder="8 (960) 900-60-90" required>
+              <svg class="contacts-input__icon contacts-input__icon--mobile" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                <path class="contacts-input__icon-path" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                <path class="contacts-input__icon-path"
+                  d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                C7.8,20,8.1,19.7,8.1,19.4z"/>
+              </svg>
+            </div>
           </div>
         </div>
       </fieldset>
-    </div>
+    <!--</div>-->
 
-    <div class="container">
+
+
+
+
+<!--    <div class="container">
       <fieldset class="form-order__aria form-aria">
-        <legend class="form-aria__legend form-legend legend-line legend-line--aria">
+        <legend class="form-aria__legend form-legend legend-line legend-line&#45;&#45;aria">
           Комментарий
         </legend>
         <div class="form-wrapper">
@@ -133,11 +142,11 @@
                     placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
-    </div>
+    </div>-->
 
-    <div class="container">
+<!--    <div class="container">
       <fieldset class="form-order__additional additional-form">
-        <legend class="additional-form__legend form-legend legend-line legend-line--additional">
+        <legend class="additional-form__legend form-legend legend-line legend-line&#45;&#45;additional">
           Дополнительно
         </legend>
         <div class="form-wrapper">
@@ -161,10 +170,10 @@
           </div>
         </div>
       </fieldset>
-    </div>
+    </div>-->
 
 
-    <div class="container">
+<!--    <div class="container">
       <div class="form-wrapper">
         <div class="form-order__link-wrapper">
           <a class="form-order__link btn" href="order.html">
@@ -178,12 +187,12 @@
           </span>
         </div>
       </div>
-    </div>
+    </div>-->
   </form>
 </main>
 
-<footer class="page-footer">
-  <div class="contacts page-footer__contacts contacts--background">
+<!--<footer class="page-footer">
+  <div class="contacts page-footer__contacts contacts&#45;&#45;background">
     <div class="container">
       <div class="contacts__container">
         <p class="contacts__cooperation">Приглашаем
@@ -256,7 +265,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer>-->
 <script src="./js/picturefill.min.js"></script>
 <include src="img/svg/symbols.svg"></include>
 </body>

@@ -25,11 +25,16 @@
     outline: 0;
   }
 
-  &--ege-width {
+  //&--ege-width {
+  //  width: 172.5px;
+  //}
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .form-input--ege-width {
     width: 172.5px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .form-input {
