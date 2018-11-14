@@ -21,8 +21,7 @@
 @media (min-width: $tablet-width) {
   .legend-title {
     left: 0;
-    width: 514px;
-    padding-left: 42px;
+    padding-left: 40px;
     padding-right: 42px;
     font-size: 36px;
     line-height: 36px;
@@ -30,6 +29,7 @@
 
   .legend-title--width-contacts {
     padding-right: 36px;
+    width: 514px;
   }
 }
 
@@ -37,5 +37,9 @@
 @media (min-width: $desktop-width) {
   .legend-title {
     left: -40px;
+  }
+
+  .legend-title--width-aria {
+    padding-right: 39px;
   }
 }

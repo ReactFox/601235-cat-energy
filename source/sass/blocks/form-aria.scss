@@ -1,4 +1,5 @@
 .form-aria {
+  width: 100%;
   border: none;
 }
 
@@ -36,18 +37,14 @@
 }
 
 .form-aria__legend {
-  width: 142px;
-  padding-right: 19px;
   margin-top: 0;
   margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .form-aria__legend {
-    width: 259px;
     margin-bottom: 77px;
   }
-
 
   .form-aria__text {
     width: 631px;
@@ -65,11 +62,5 @@
 @media (min-width: $desktop-width) {
   .form-aria__text {
     width: 1220px;
-  }
-
-  .form-aria__legend {
-    position: relative;
-    left: -40px;
-    top: 0;
   }
 }
