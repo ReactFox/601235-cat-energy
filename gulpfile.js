@@ -90,7 +90,7 @@ gulp.task("sprite", function () {
       mode: "symbols",
       preview: false
     }))
-    .pipe(gulp.dest("./source/img/"));
+    .pipe(gulp.dest("./build/img/"));
 });
 
 //Пост HTML
