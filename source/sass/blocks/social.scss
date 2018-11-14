@@ -30,9 +30,10 @@
 .social__list {
   @include reset-indentation;
   width: 100%;
-  list-style: none;
   display: flex;
   justify-content: center;
+  //align-items: center;
+  list-style: none;
   padding-top: 20px;
   padding-bottom: 18px;
 }
@@ -67,12 +68,12 @@
 
   .social__icon-vk {
     width: 31px;
-    height: auto;
+    height: 31px;
   }
 
   .social__icon-insta {
     width: 23px;
-    height: auto;
+    height: 23px;
   }
 
   .social__icon-fb {
