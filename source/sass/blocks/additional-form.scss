@@ -4,7 +4,6 @@
 }
 
 .additional-form__legend {
-  width: 164px;
   margin-top: 0;
   margin-bottom: 37px;
 }
@@ -38,7 +37,6 @@
   border: 1px solid #cdcdcd;
 }
 
-
 .additional-form__checkbox:checked + .additional-form__label::before {
   background: url("../img/icon-tick.svg") no-repeat center;
   background-size: 21px auto;
@@ -54,7 +52,6 @@
   }
 
   .additional-form__legend {
-    width: 292px;
     margin-bottom: 67px;
   }
 
@@ -68,10 +65,3 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .additional-form__legend {
-    position: relative;
-    left: -40px;
-    top: 0;
-  }
-}

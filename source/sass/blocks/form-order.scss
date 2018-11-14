@@ -37,12 +37,12 @@
 
 .form-order__aria {
   @include reset-indentation;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .form-order__additional {
   @include reset-indentation;
-  margin-top: 4px;
+  margin-top: 0;
   margin-bottom: 17px;
 }
 
@@ -75,9 +75,8 @@
   }
 
   .form-order__contacts-data {
-    //margin-bottom: 45px;
-    margin-top: 78px; // новое
-    margin-bottom: 44px; //новое
+    margin-top: 78px;
+    margin-bottom: 44px;
   }
 
   .form-order__main {
@@ -119,18 +118,13 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .form-order__title {
     width: 333px;
   }
 
   .form-order__contacts-data {
-    //margin-top: 24px;
-    //padding-top: 38px;
     margin-top: 68px;
-    //padding-top: 69px; новое
-    //margin-bottom: 0; новое
     margin-bottom: 46px;
   }
 
