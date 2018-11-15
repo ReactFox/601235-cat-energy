@@ -6,7 +6,7 @@
 
 .program__item {
   @include reset-indentation;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: block;
 }
 
@@ -15,6 +15,10 @@
     display: flex;
     margin-bottom: 0;
     flex-direction: column;
+  }
+
+  .program__item {
+    margin-bottom: 20px;
   }
 }
 

@@ -13,6 +13,11 @@
   padding-left: 45px;
 }
 
+.additional-form__label:hover::before,
+.additional-form__label:focus::before {
+  border: 1px solid #bababa;
+}
+
 .additional-form__label:active {
   opacity: 0.3;
 }
@@ -23,18 +28,19 @@
   width: 30px;
   height: 30px;
   top: -4px;
-  left: 18px;
   display: block;
-}
-
-.additional-form__checkbox + .additional-form__label::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: -3px;
   left: 0;
   padding: 6px 3px 6px 4px;
   border: 1px solid #cdcdcd;
+}
+
+.additional-form__checkbox:hover + .additional-form__label::before,
+.additional-form__checkbox:focus + .additional-form__label::before {
+  border-color: #bababa;
+}
+
+.additional-form__checkbox:active + .additional-form__label::before {
+  opacity: 0.3;
 }
 
 .additional-form__checkbox:checked + .additional-form__label::before {
@@ -62,5 +68,10 @@
   .additional-form__label::before {
     width: 40px;
     height: 40px;
+  }
+
+  .additional-form__checkbox:focus + .additional-form__label::before {
+    outline: 2px solid $green-color;
+    outline-offset: 4px;
   }
 }

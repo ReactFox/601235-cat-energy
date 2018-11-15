@@ -1,21 +1,17 @@
 .example {
-  //width: 320px;
-  //margin: 0 auto;
   background-color: $lightgrey-color;
 }
 
 .example__title {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 17px;
-  padding-bottom: 22px;
+  margin-top: 17px;
+  margin-bottom: 25px;
 }
 
 .example__description {
   @include font-regular;
   @include reset-indentation;
   color: $text-color;
-  padding-right: 10px;
+  padding-right: 7px;
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 400;
@@ -58,10 +54,6 @@
     max-width: 677px;
     height: 522px;
   }
-}
-
-.example__picture {
-  //display: none;
 }
 
 .example__picture-slim {

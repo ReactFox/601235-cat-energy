@@ -11,7 +11,7 @@
 
 .advantages__title {
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +21,7 @@
   }
 
   .advantages__title {
+    margin-top: 0;
     margin-bottom: 25px;
     font-size: 60px;
     line-height: 60px;
