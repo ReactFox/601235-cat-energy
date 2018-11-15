@@ -88,7 +88,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 29.8px;
-  margin-left: 2px;
   margin-bottom: 34px;
 }
 
@@ -110,7 +109,7 @@
   position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
-  margin-left: 19px;
+  margin-left: 18px;
   margin-right: 18px;
 }
 
@@ -126,7 +125,6 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    //width: $tablet-width;
     background-image: linear-gradient(to bottom, #ffffff 57.2%, #f2f2f2 57.2%);
   }
 
@@ -141,8 +139,8 @@
   }
 
   .example__title {
-    margin-top: 26px;
-    margin-bottom: 42px;
+    margin-top: 43px;
+    margin-bottom: 65px;
     font-size: 60px;
     line-height: 60px;
   }
