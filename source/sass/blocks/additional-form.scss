@@ -13,11 +13,6 @@
   padding-left: 45px;
 }
 
-.additional-form__label:hover::before,
-.additional-form__label:focus::before {
-  border: 1px solid #bababa;
-}
-
 .additional-form__label:active {
   opacity: 0.3;
 }
@@ -32,6 +27,11 @@
   left: 0;
   padding: 6px 3px 6px 4px;
   border: 1px solid #cdcdcd;
+}
+
+.additional-form__label:hover::before,
+.additional-form__label:focus::before {
+  border: 1px solid #bababa;
 }
 
 .additional-form__checkbox:hover + .additional-form__label::before,

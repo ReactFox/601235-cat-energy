@@ -17,15 +17,6 @@
   padding-left: 64px;
 }
 
-.radio-data__label:hover::before,
-.radio-data__label:focus::before {
-  border-color: #bababa;
-}
-
-.radio-data__label:active {
-  opacity: 0.3;
-}
-
 .radio-data__label::before {
   content: "";
   position: absolute;
@@ -42,6 +33,19 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.radio-data__label:hover::before,
+.radio-data__label:focus::before {
+  border-color: #bababa;
+}
+
+.radio-data__label:active {
+  opacity: 0.3;
+}
+
+.radio-data__label:focus {
+  border-color: #bababa;
 }
 
 .radio-data__radio:hover + .radio-data__label::before,
